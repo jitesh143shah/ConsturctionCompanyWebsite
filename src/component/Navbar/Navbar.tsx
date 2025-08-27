@@ -1,3 +1,5 @@
+import { Navlinks } from "../../constants/Navlinks.js";
+
 const Navbar = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Navbar = () => {
             </div>
             <div className=" flex items-center justify-center  gap-0.5  font-bold  ">
               <div className="border-2 border-primary">
-                <ul className="flex items-center text-1xl  cursor-pointer ">
+                {/* <ul className="flex items-center text-1xl  cursor-pointer ">
                   <li
                     className="w-full h-full p-5 hover:bg-white hover:text-secondary
                   bg-secondary/70 text-white  duration-500 "
@@ -46,6 +48,18 @@ const Navbar = () => {
                   >
                     <a href="#">Contact</a>
                   </li>
+                </ul> */}
+                <ul className="flex items-center  text-1xl  cursor-pointer ">
+                  {Navlinks.map((data) => (
+                    <li
+                      className="w-[100px] h-full py-5 px-2 hover:bg-white hover:text-secondary
+                      bg-secondary/70 text-white  duration-500"
+                    >
+                      <a className="uppercase " href={data.link}>
+                        {data.name}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div
@@ -53,7 +67,7 @@ const Navbar = () => {
              border-primary px-12 hover:bg-secondary
                  hover:text-white duration-500"
               >
-                <button className=" flex items-center w-full h-full justify-center  ">
+                <button className=" flex items-center w-full h-full justify-center   ">
                   Call Now!
                 </button>
               </div>

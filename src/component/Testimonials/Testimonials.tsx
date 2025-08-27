@@ -55,7 +55,7 @@ const Testimonials = () => {
             <div className="">
               <div className="py-20 ">
                 <div className="grid grid-cols-2 gap-10  ">
-                  <div className="relative ">
+                  <div className="w-full bg-cover ">
                     {/* <div className="   w-full ">
                       <img
                         src={bridge}
@@ -64,7 +64,7 @@ const Testimonials = () => {
                       />
                     </div> */}
                     <div
-                      className="h-[1000px] w-full bg-fixed bg-center bg-cover
+                      className="h-[1200px]  bg-fixed bg-center bg-cover
                       bg-no-repeat "
                       style={{ backgroundImage: `url(${bridge}) ` }}
                     ></div>

@@ -1,9 +1,13 @@
 import "./App.css";
-import About from "./component/About/About";
-import Hero from "./component/Hero/Hero";
-import Project from "./component/Project/Project";
-import Services from "./component/Services/Services";
-import Testimonials from "./component/Testimonials/Testimonials";
+import {
+  About,
+  Client,
+  Footer,
+  Hero,
+  Project,
+  Services,
+  Testimonials,
+} from "./component/imports";
 
 function App() {
   return (
@@ -13,6 +17,8 @@ function App() {
       <About />
       <Services />
       <Project />
+      <Client />
+      <Footer />
     </>
   );
 }

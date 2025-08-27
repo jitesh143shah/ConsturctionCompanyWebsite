@@ -1,5 +1,6 @@
 // import { construction } from "../../images";
-import { videotwo } from "../../video";
+
+import { VideoTwo } from "../../video";
 import Navbar from "../Navbar/Navbar";
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
               className="h-full w-full "
             /> */}
             <video
-              src={videotwo}
+              src={VideoTwo}
               autoPlay
               loop
               muted
