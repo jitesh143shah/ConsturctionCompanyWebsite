@@ -1,0 +1,19 @@
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+PL:wght@100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manufacturing+Consent&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+PL:wght@100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Style+Script&display=swap"); */
+
+@layer components {
+  .container {
+    @apply md:max-w-6xl sm:max-w-3xl  mx-auto;
+  }
+}
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+  --font-roboto: Roboto, serif;
+  --font-cursive: Playwrite PL, cursive;
+  --font-avenir: Avenir, sans-serif;
+  --color-primary: #fd5521;
+  --color-secondary: #23221f;
+  --color-gray: #e9e7f7;
+}
