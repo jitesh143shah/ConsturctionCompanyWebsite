@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <div className="z-50 container   ">
-        <nav className="flex  justify-between pt-10">
+        <nav className=" flex  justify-between pt-10">
           <div
             className="logo flex flex-col justify-center items-center
           cursor-pointer bg-secondary/70 text-white px-5 border-2 hover:bg-secondary border-primary "
@@ -78,7 +78,7 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-        </nav>{" "}
+        </nav>
         <ResponsiveMenu showMenu={showMenu} />
         <div className=" md:hidden flex text-primary pr-20 fixed top-10 right-0">
           {showMenu ? (

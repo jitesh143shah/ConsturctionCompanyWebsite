@@ -1,9 +1,23 @@
-import React from "react";
+import {
+  About,
+  Client,
+  Footer,
+  Hero,
+  Project,
+  Services,
+  Testimonials,
+} from "../../component/imports";
 
 const Home = () => {
   return (
     <>
-      <div>home</div>
+      <Hero />
+      <Testimonials />
+      <About />
+      <Services />
+      <Project />
+      <Client />
+      <Footer />
     </>
   );
 };

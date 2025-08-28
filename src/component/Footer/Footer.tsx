@@ -1,4 +1,6 @@
 import { SocialLinks } from "../../constants/SocialLinks";
+import { ScrollToTop } from "../imports";
+import ResponsiveScrollToTop from "../ScrollToTop/ResponsiveScrollToTop";
 
 const Footer = () => {
   return (
@@ -96,7 +98,12 @@ const Footer = () => {
                   </span>
                 </span>
               </div>
-              <div>Go Up</div>
+              <div className="md:hidden">
+                <ResponsiveScrollToTop />
+              </div>
+              <div className="hidden md:flex underline cursor-pointer">
+                <ScrollToTop />
+              </div>
             </div>
           </div>
         </div>

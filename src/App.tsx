@@ -1,4 +1,4 @@
-import { Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 // import {
 //   About,
@@ -10,12 +10,14 @@ import "./App.css";
 //   Testimonials,
 // } from "./component/imports";
 import Home from "./Pages/Home/Home";
+import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 
 function App() {
   return (
     <>
       <Routes>
-        <Router path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
 
       {/* <Hero />
