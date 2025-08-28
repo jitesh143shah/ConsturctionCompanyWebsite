@@ -45,7 +45,7 @@ const Client = () => {
             <div className="overflow-hidden  rounded-2xl">
               <div className="bg-gray-200 h-full w-full  group">
                 <img
-                  src={nest}
+                  src={tocket}
                   alt="okrmrn"
                   className="group-hover:bg-red-100 group-hover:scale-200 duration-500
                5 w-full h-full py-30 px-20"
@@ -66,16 +66,6 @@ const Client = () => {
               <div className="bg-gray-200 h-full w-full  group">
                 <img
                   src={latch}
-                  alt="okrmrn"
-                  className="group-hover:bg-red-100 group-hover:scale-200 duration-500
-               5 w-full h-full py-30 px-20"
-                />
-              </div>
-            </div>
-            <div className="overflow-hidden  rounded-2xl">
-              <div className="bg-gray-200 h-full w-full  group">
-                <img
-                  src={tocket}
                   alt="okrmrn"
                   className="group-hover:bg-red-100 group-hover:scale-200 duration-500
                5 w-full h-full py-30 px-20"
@@ -116,6 +106,16 @@ const Client = () => {
               <div className="bg-gray-200 h-full w-full  group">
                 <img
                   src={oweer}
+                  alt="okrmrn"
+                  className="group-hover:bg-red-100 group-hover:scale-200 duration-500
+               5 w-full h-full py-30 px-20"
+                />
+              </div>
+            </div>{" "}
+            <div className="overflow-hidden  rounded-2xl">
+              <div className="bg-gray-200 h-full w-full  group">
+                <img
+                  src={nest}
                   alt="okrmrn"
                   className="group-hover:bg-red-100 group-hover:scale-200 duration-500
                5 w-full h-full py-30 px-20"
