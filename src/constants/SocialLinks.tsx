@@ -11,7 +11,4 @@ export const SocialLinks = [
     name: "Youtube",
     icons: FaYoutube,
   },
-  {},
-  {},
-  {},
 ];

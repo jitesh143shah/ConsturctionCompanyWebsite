@@ -1,4 +1,3 @@
-import React from "react";
 import { SocialLinks } from "../../constants/SocialLinks";
 
 const Footer = () => {
@@ -39,10 +38,18 @@ const Footer = () => {
               <div>
                 <div className="font-bold text-2xl">Social</div>
                 <div>
-                  {SocialLinks.map((data) => (
-                    <div>{data.name}</div>
+                  {SocialLinks.map(({ icons: Icon }, index) => (
+                    <div key={index}>
+                      <Icon className="text-2xl hover:text-primary-two duration-300 m-1" />
+                    </div>
                   ))}
                 </div>
+                {/* {SocialLinks.map(({ icons: Icons }, index) => (
+                    <div key={index}>
+                      <Icons si />
+                    </div>
+                  ))}
+                </div> */}
               </div>
               <div>4</div>
               <div>5</div>
