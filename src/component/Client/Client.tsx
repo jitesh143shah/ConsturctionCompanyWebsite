@@ -1,14 +1,15 @@
-import {
-  akeofit,
-  bronfman,
-  demotive,
-  latch,
-  nest,
-  oweer,
-  right,
-  shawns,
-  tocket,
-} from "../../images";
+import { ClientLinks } from "../../constants/ClientLinks";
+// import {
+//   akeofit,
+//   bronfman,
+//   demotive,
+//   latch,
+//   nest,
+//   oweer,
+//   right,
+//   shawns,
+//   tocket,
+// } from "../../images";
 
 const Client = () => {
   return (
@@ -21,8 +22,20 @@ const Client = () => {
               We believe each client is a <br /> long term partnership
             </span>
           </div>
-          <div className="grid grid-cols-5 gap-4 py-20">
-            <div className="overflow-hidden  rounded-2xl">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 py-20">
+            {ClientLinks.map((data) => (
+              <div className="overflow-hidden  rounded-2xl">
+                <div className="bg-gray-200 h-full w-full  group">
+                  <div
+                    className="group-hover:bg-red-100 group-hover:scale-150 duration-500
+               5 w-full h-full py-10 px-20 flex flex-col justify-center items-center"
+                  >
+                    {data.link}
+                  </div>
+                </div>
+              </div>
+            ))}
+            {/* <div className="overflow-hidden  rounded-2xl">
               <div className="bg-gray-200 h-full w-full  group">
                 <img
                   src={akeofit}
@@ -108,7 +121,7 @@ const Client = () => {
                   src={oweer}
                   alt="okrmrn"
                   className="group-hover:bg-red-100 group-hover:scale-200 duration-500
-               5 w-full h-full py-30 px-20"
+               5 w-full h-full py-10 px-20"
                 />
               </div>
             </div>{" "}
@@ -118,10 +131,10 @@ const Client = () => {
                   src={nest}
                   alt="okrmrn"
                   className="group-hover:bg-red-100 group-hover:scale-200 duration-500
-               5 w-full h-full py-30 px-20"
+               5 w-full h-full py-10 px-20"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

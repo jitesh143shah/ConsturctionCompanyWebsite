@@ -80,7 +80,7 @@ const Navbar = () => {
           </div>
         </nav>
         <ResponsiveMenu showMenu={showMenu} />
-        <div className=" md:hidden flex text-primary pr-20 fixed top-10 right-0">
+        <div className=" md:hidden flex text-primary pr-20 z-10 fixed top-10 right-0">
           {showMenu ? (
             <IoClose
               onClick={toogleMenu}

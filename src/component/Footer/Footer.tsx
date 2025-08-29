@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container relative ">
           <hr />
           <div className="py-20 flex flex-col justify-end gap-10">
-            <div className="grid grid-cols-5 gap-5 ">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-5 ">
               <div
                 className=" flex flex-col justify-self-start items-center
           cursor-pointer    "

@@ -1,4 +1,4 @@
-import { nest } from "../images";
+import { latch, nest } from "../images";
 
 export const ClientLinks = [
   {
@@ -8,12 +8,7 @@ export const ClientLinks = [
   },
   {
     id: 2,
-    link: <img src={nest} alt="" />,
+    link: <img src={latch} alt="" />,
     name: "bronfman",
-  },
-  {
-    id: 3,
-    link: "../assets/Cimages/demotive.png",
-    name: "demotive",
   },
 ];
