@@ -26,12 +26,14 @@ const Client = () => {
             {ClientLinks.map((data) => (
               <div className="overflow-hidden  rounded-2xl">
                 <div className="bg-gray-200 h-full w-full  group">
-                  <div
-                    className="group-hover:bg-red-100 group-hover:scale-150 duration-500
+                  <a href={data.href}>
+                    <div
+                      className="group-hover:bg-red-100 group-hover:scale-150 duration-500
                5 w-full h-full py-10 px-20 flex flex-col justify-center items-center"
-                  >
-                    {data.link}
-                  </div>
+                    >
+                      {data.link}
+                    </div>
+                  </a>
                 </div>
               </div>
             ))}

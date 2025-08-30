@@ -1,4 +1,13 @@
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/swiper-bundle.css";
+import "../../App.css";
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+// import { building } from "../../images";
+import { ImagesLinks } from "../../constants/ImagesLinks";
 
 const Project = () => {
   return (
@@ -20,18 +29,52 @@ const Project = () => {
               </p>
             </div>
           </div>
-
           {/* Swiper */}
-          <div className="mt-10">
+          <div className="mt-10 ">
             <Swiper
+              modules={[Navigation, Pagination, Mousewheel, Keyboard]}
               cssMode={true}
               navigation={true}
-              pagination={true}
+              pagination={{ clickable: true }}
+              slidesPerView={3}
+              spaceBetween={20}
               mousewheel={true}
               keyboard={true}
+              // loop={true}
               className="mySwiper"
             >
-              <SwiperSlide>Slide 1</SwiperSlide>
+              {ImagesLinks.map((data) => (
+                <SwiperSlide key={data.id}>
+                  <div className="relative group w-full h-[400px] overflow-hidden">
+                    <img
+                      src={data.image}
+                      alt={data.name}
+                      className="w-full h-full object-cover group-hover:scale-125 duration-500 "
+                    />
+
+                    <div
+                      className="absolute top-1/2 left-1/2
+                   -translate-x-1/2 -translate-y-1/2
+                   opacity-0 group-hover:opacity-100
+                   bg-gray-800 text-white text-3xl font-bold
+                   px-6 py-3 rounded-lg transition-all duration-300"
+                    >
+                      {data.name}
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+              {/* <SwiperSlide>
+                <img src={building} alt="" />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={building} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={building} alt="" />
+              </SwiperSlide>
+
               <SwiperSlide>Slide 2</SwiperSlide>
               <SwiperSlide>Slide 3</SwiperSlide>
               <SwiperSlide>Slide 4</SwiperSlide>
@@ -39,7 +82,7 @@ const Project = () => {
               <SwiperSlide>Slide 6</SwiperSlide>
               <SwiperSlide>Slide 7</SwiperSlide>
               <SwiperSlide>Slide 8</SwiperSlide>
-              <SwiperSlide>Slide 9</SwiperSlide>
+              <SwiperSlide>Slide 9</SwiperSlide> */}
             </Swiper>
           </div>
         </div>

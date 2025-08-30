@@ -27,7 +27,7 @@ const ResponsiveMenu = ({ showMenu }: { showMenu: boolean }) => {
               >
                 Contact Us
               </button>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>

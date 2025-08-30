@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar";
 const Hero = () => {
   return (
     <>
-      <div className="   ">
+      <div className="    ">
         <div className="relative pb-25 ">
           <div className="absolute z-[-10] h-[100%] w-[100%]">
             {/* <img
@@ -31,14 +31,20 @@ const Hero = () => {
             <Navbar />
           </div>
           <div className="flex container flex-col text-white  justify-center  h-[100%] ">
-            <div className="flex flex-col justify-center my-30  mx-50 gap-15 h-full">
-              <span className="text-9xl font-roboto font-semibold">
+            <div
+              className="flex flex-col justify-center my-30 sm:mx-10  md:mx-50
+            gap-10 md:gap-15 h-full"
+            >
+              <span className="text-5xl md:text-7xl lg:text-9xl font-roboto font-semibold">
                 Building a <br /> Concert Future
               </span>
-              <span className="text-4xl font-semibold">
+              <span className="text-2xl  md:text-4xl font-semibold">
                 Honest, Reliable Builder since 1998
               </span>
-              <div className="flex gap-4">
+              <div
+                className="flex gap-4 md:flex-row flex-col
+            "
+              >
                 <button
                   className="border-1 border-primary bg-primary  hover:bg-secondary
                hover:text-primary  px-15 py-4 duration-500"

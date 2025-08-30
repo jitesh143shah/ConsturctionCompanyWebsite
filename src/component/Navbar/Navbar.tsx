@@ -78,21 +78,21 @@ const Navbar = () => {
               </button>
             </div>
           </div>
+          <div className=" md:hidden flex text-primary pr-20 z-10 fixed top-10 -right-5">
+            {showMenu ? (
+              <IoClose
+                onClick={toogleMenu}
+                className="  text-6xl flex justify-center items-center duration-500"
+              />
+            ) : (
+              <IoMenu
+                onClick={toogleMenu}
+                className="text-6xl flex justify-center items-center duration-500"
+              />
+            )}
+          </div>
         </nav>
         <ResponsiveMenu showMenu={showMenu} />
-        <div className=" md:hidden flex text-primary pr-20 z-10 fixed top-10 right-0">
-          {showMenu ? (
-            <IoClose
-              onClick={toogleMenu}
-              className="  text-6xl flex justify-center items-center duration-500"
-            />
-          ) : (
-            <IoMenu
-              onClick={toogleMenu}
-              className="text-6xl flex justify-center items-center duration-500"
-            />
-          )}
-        </div>
       </div>
     </>
   );
