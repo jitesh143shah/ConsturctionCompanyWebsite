@@ -12,19 +12,19 @@ import { ImagesLinks } from "../../constants/ImagesLinks";
 const Project = () => {
   return (
     <>
-      <div className="bg-gray-300 py-40">
+      <div className="bg-gray-300 py-20  md:py-40">
         <div className="container">
           <div className="flex justify-between items-center font-roboto">
-            <div className="flex flex-col w-[60%] gap-5">
-              <span className="text-2xl font-poppins">What We do</span>
-              <span className="text-5xl font-bold text-primary">
+            <div className="flex flex-col gap-5">
+              <span className="text-xl md:text-2xl font-poppins">
+                What We do
+              </span>
+              <span className="text-3xl md:text-5xl font-bold text-primary">
                 Our Projects
               </span>
-              <p className="tracking-normal [word-spacing:0.4rem]">
+              <p className="tracking-normal w-[70%] text-justify">
                 I'm a paragraph. Click here to add your own text and edit me.{" "}
-                <br />
                 I’m a great place for you to tell a story and let your users{" "}
-                <br />
                 know a little more about you.
               </p>
             </div>
@@ -35,9 +35,14 @@ const Project = () => {
               modules={[Navigation, Pagination, Mousewheel, Keyboard]}
               cssMode={true}
               navigation={true}
-              pagination={{ clickable: true }}
-              slidesPerView={3}
-              spaceBetween={20}
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 }, // 📱 mobile
+                640: { slidesPerView: 2, spaceBetween: 15 }, // small screens
+                768: { slidesPerView: 2, spaceBetween: 20 }, // tablets
+                1024: { slidesPerView: 4, spaceBetween: 25 }, // desktop
+              }}
+              // slidesPerView={3}
+              // spaceBetween={20}
               mousewheel={true}
               keyboard={true}
               // loop={true}

@@ -9,24 +9,28 @@ import { TbBuildingChurch } from "react-icons/tb";
 const Services = () => {
   return (
     <>
-      <div className="bg-gray py-40 ">
+      <div className="bg-gray py-20 md:py-40 ">
         <div className="container">
-          <div className="flex  justify-between items-center font-roboto pb-20  ">
+          <div
+            className="flex  md:justify-between items-start md:items-center  font-roboto
+           pb-20 flex-col md:flex-row gap-8 md:gap-0 "
+          >
             <div className="flex flex-col gap-5">
-              <span className="text-2xl font-poppins ">Our Services</span>
-              <span className="text-5xl font-bold text-primary">
-                We Offer a Range of Services
-                <br /> to Meet Your Needs
+              <span className="text-xl md:text-2xl font-poppins ">
+                Our Services
               </span>
-              <p className="tracking-normal [word-spacing:0.4rem]">
+              <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary w-[70%]">
+                We Offer a Range of Services to Meet Your Needs
+              </span>
+              <p className="tracking-normal [word-spacing:0.4rem] w-[80%] ">
                 I'm a paragraph. Click here to add your own text and edit me.{" "}
-                <br />
                 Let your users get to know you.
               </p>
             </div>
             <div>
               <div
-                className="bg-primary py-4 px-15 hover:bg-gray border-1 border-primary
+                className="bg-primary px-8 md:px- py-2 md:py-4 hover:bg-gray border-1
+                   border-primary flex flex-col
            hover:border-secondary hover:text-secondary duration-500"
               >
                 Read More
@@ -34,70 +38,111 @@ const Services = () => {
             </div>
           </div>
           <div className="">
-            <div className="grid grid-cols-5 gap-4 ">
-              <div></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4  justify-center items-center">
+              <div className="hidden md:flex"></div>
 
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50  py-20 px-10"
+               hover:bg-amber-100 w-full h-full    gap-5 bg-amber-50 py-15 md:py-20 px-10 "
               >
-                <BsBuildings className="text-primary text-5xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <span className="text-2xl">Commercial Construction</span>
+                <BsBuildings
+                  className="text-primary text-3xl md:text-6xl font-extralight
+                  group-hover:translate-x-20 md:group-hover:translate-x-15
+                duration-500 "
+                />
+                <span className="text-xl md:text-2xl text-center">
+                  Commercial Construction
+                </span>
               </div>
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50    py-20 px-10"
+               hover:bg-amber-100  w-full h-full  gap-5 bg-amber-50    py-15 md:py-20 px-10"
               >
-                <IoHomeOutline className="text-primary text-6xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <span className="text-2xl">Residential Construction</span>
+                <IoHomeOutline
+                  className="text-primary text-4xl md:text-6xl font-extralight
+                 group-hover:translate-x-20 md:group-hover:translate-x-15 duration-500 "
+                />
+                <span className="text-xl md:text-2xl text-center ">
+                  Residential Construction
+                </span>
               </div>
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50    py-20 px-10"
+               hover:bg-amber-100  w-full h-full   gap-5 bg-amber-50    py-15 md:py-20 px-10"
               >
-                <GiBlackBook className="text-primary text-6xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <span className="text-2xl">Pre-Construction</span>
+                <GiBlackBook
+                  className="text-primary text-4xl md:text-6xl font-extralight
+                 group-hover:translate-x-20 md:group-hover:translate-x-15 duration-500 "
+                />
+                <span className="text-xl md:text-2xl text-center ">
+                  Pre-Construction
+                </span>
               </div>
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50    py-20 px-10"
+               hover:bg-amber-100  w-full h-full  gap-5 bg-amber-50     py-15 md:py-20 px-10"
               >
-                <FaUserAstronaut className="text-primary text-6xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <span className="text-2xl">Site Management</span>
+                <FaUserAstronaut
+                  className="text-primary text-4xl md:text-6xl font-extralight
+                 group-hover:translate-x-20 md:group-hover:translate-x-15 duration-500 "
+                />
+                <span className="text-xl md:text-2xl text-center ">
+                  Site Management
+                </span>
               </div>
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50    py-20 px-10"
+               hover:bg-amber-100  w-full h-full    gap-5 bg-amber-50     py-15 md:py-20 px-10"
               >
-                <TbBuildingChurch className="text-primary text-6xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <span className="text-2xl">Special Projects</span>
+                <TbBuildingChurch
+                  className="text-primary text-4xl md:text-6xl font-extralight
+                 group-hover:translate-x-20 md:group-hover:translate-x-15 duration-500 "
+                />
+                <span className="text-xl md:text-2xl text-center ">
+                  Special Projects
+                </span>
               </div>
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50   py-20 px-10"
+               hover:bg-amber-100  w-full h-full   gap-5 bg-amber-50  py-15 md:py-20 px-10"
               >
-                <GiBulldozer className="text-primary text-6xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <span className="text-2xl">Infrastructure Construction</span>
+                <GiBulldozer
+                  className="text-primary text-4xl md:text-6xl font-extralight
+                 group-hover:translate-x-20 md:group-hover:translate-x-15 duration-500 "
+                />
+                <span className="text-xl md:text-2xl text-center ">
+                  Infrastructure Construction
+                </span>
               </div>
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50    py-20 px-10"
+               hover:bg-amber-100  w-full h-full  gap-5 bg-amber-50    py-15 md:py-20 px-10"
               >
-                <SlSettings className="text-primary relative text-6xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <SlSettings className="text-primary ml-20 mt-[-50px] text-4xl font-extralight group-hover:translate-x-15 duration-500 " />
-                <span className="text-2xl">Civil Engineering</span>
+                <SlSettings
+                  className="text-primary text-4xl md:text-6xl font-extralight
+                 group-hover:translate-x-20 md:group-hover:translate-x-15 duration-500 "
+                />
+                <SlSettings
+                  className="text-primary ml-15 md:ml-20 mt-[-40px] md:text-4xl  text-2xl font-extralight
+                  group-hover:translate-x-20 md:group-hover:translate-x-15  duration-500 "
+                />
+                <span className="text-xl md:text-2xl text-center ">
+                  Civil Engineering
+                </span>
               </div>
               <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
-               hover:bg-amber-100 w-fit  gap-5 bg-amber-50   py-20 px-10"
+               hover:bg-amber-100  w-full h-full   gap-5 bg-amber-50    py-15 md:py-20 px-10"
               >
                 <PiShovelBold
-                  className="text-primary text-6xl font-extralight
-                 group-hover:translate-x-15 duration-500 "
+                  className="text-primary text-4xl md:text-6xl font-extralight
+                 group-hover:translate-x-20 md:group-hover:translate-x-15 duration-500 "
                 />
-                <span className="text-2xl">Landscape Construction</span>
+                <span className="text-xl md:text-2xl text-center ">
+                  Landscape Construction
+                </span>
               </div>
-              <div></div>
+              <div className="hidden md:flex"></div>
             </div>
           </div>
         </div>

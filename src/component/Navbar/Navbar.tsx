@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <div className="z-50 container   ">
-        <nav className=" flex  justify-between pt-10">
+        <nav className=" flex  justify-between pt-10 sticky">
           <div
             className="logo flex flex-col justify-center items-center
           cursor-pointer bg-secondary/70 text-white px-5 border-2 hover:bg-secondary border-primary "
@@ -55,10 +55,10 @@ const Navbar = () => {
                     <a href="#">Contact</a>
                   </li>
                 </ul> */}
-              <ul className="flex items-center  text-1xl  cursor-pointer ">
+              <ul className="flex items-center   text-1xl  cursor-pointer ">
                 {Navlinks.map((data) => (
                   <li
-                    className="w-[100px] h-full py-5 px-2 hover:bg-white hover:text-secondary
+                    className="w-[100px] h-full py-5 flex justify-center hover:bg-white hover:text-secondary
                       bg-secondary/70 text-white  duration-500"
                   >
                     <a className="uppercase " href={data.link}>
@@ -78,16 +78,16 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className=" md:hidden flex text-primary pr-20 z-10 fixed top-10 -right-5">
+          <div className=" md:hidden flex text-primary pr-20 z-50 fixed top-10 -right-5 ">
             {showMenu ? (
               <IoClose
                 onClick={toogleMenu}
-                className="  text-6xl flex justify-center items-center duration-500"
+                className="  text-6xl flex justify-center items-center duration-500 cursor-pointer"
               />
             ) : (
               <IoMenu
                 onClick={toogleMenu}
-                className="text-6xl flex justify-center items-center duration-500"
+                className="text-6xl flex justify-center items-center duration-500 cursor-pointer"
               />
             )}
           </div>
