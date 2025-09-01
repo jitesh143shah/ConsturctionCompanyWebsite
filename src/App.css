@@ -1,10 +1,11 @@
-/* .swiper-button-next,
+.swiper-button-next,
 .swiper-button-prev {
   color: rgb(255, 255, 255) !important;
-  background-color: orangered;
+  background-color: rgba(255, 68, 0, 0.753);
   padding: 30px;
-  font-size: 15px;
+  font-size: 15px !important;
   left: 0;
+  /* color: orangered; */
   border-radius: 50%;
 }
 
@@ -19,4 +20,4 @@
 
 .swiper-pagination-bullet {
   background-color: rgba(76, 0, 255, 0.5);
-} */
+}

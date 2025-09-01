@@ -9,15 +9,14 @@ const Footer = () => {
         <div className="container relative ">
           <hr />
           <div className="py-20 flex flex-col justify-end gap-10">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-5 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 ">
               <div
-                className=" flex flex-col justify-self-start items-center
-          cursor-pointer    "
+                className="logo flex flex-col justify-center items-center h-fit w-fit
+                 cursor-pointer bg-secondary/70 text-white px-5  py-1 border-2 duration-500
+                  hover:bg-secondary border-primary "
               >
-                <span className="uppercase sm:text-2xl md:text-3xl font-extrabold tracking-wider">
-                  MCR
-                </span>
-                <span className="sm:text-xl md:text-2xl">Construction</span>
+                <span className="uppercase text-2xl ">MCR</span>
+                <span>Construction</span>
               </div>
               <div className="flex flex-col gap-5">
                 <div className="font-bold text-xl md:text-2xl">Head Office</div>
@@ -40,28 +39,33 @@ const Footer = () => {
               <div className="flex gap-5 flex-col ">
                 <div className="font-bold text-xl md:text-2xl ">Social</div>
 
-                {SocialLinks.map(({ icons: Icons, name, href }, index) => (
-                  <div className="flex gap-50 bg-primary/10 flex-col ">
-                    <div
-                      key={index}
-                      className="  hover:bg-primary duration-500"
-                    >
-                      <a
-                        href={href}
-                        target="_blank"
-                        className="flex items-center justify-between px-10 gap-5 p-2 group
-                         "
+                {SocialLinks.map(
+                  ({ icons: Icons, name, href, color }, index) => (
+                    <div className="flex gap-50 bg-primary/10 flex-col  ">
+                      <div
+                        key={index}
+                        className="  hover:bg-primary duration-500"
                       >
-                        <div className="group-hover:text-white capitalize ">
-                          {name}
-                        </div>
-                        <div>
-                          <Icons className="h-[25px] w-full text-primary group-hover:text-white " />
-                        </div>
-                      </a>
+                        <a
+                          href={href}
+                          target="_blank"
+                          className="flex items-center justify-between px-10 gap-5 p-2 group
+                         "
+                        >
+                          <div className="group-hover:text-white capitalize ">
+                            {name}
+                          </div>
+                          <div>
+                            <Icons
+                              className="h-[25px] w-full group-hover:text-white"
+                              style={{ color: color }} // must be an object
+                            />
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  )
+                )}
               </div>
               <div className="flex flex-col gap-5">
                 <div>
@@ -75,24 +79,24 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex flex-col gap-5 ">
-                <div className="flex items-center justify-center px-5 mt-20">
+                <div className="flex items-center justify-center ">
                   <button
                     className="border-1 border-white text-white  bg-primary hover:bg-white
-               hover:text-secondary px-15 py-4 duration-500"
+               hover:text-secondary px-12 py-4 duration-500 w-full"
                   >
                     Contact Us
                   </button>
                 </div>
               </div>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center">
               <div>
-                <span>
-                  © 2025 by &nbsp;
+                <span className="text-center">
+                  © <span> {new Date().getFullYear()}</span> by &nbsp;
                   <span className="text-primary hover:text-black duration-500">
-                    MCR Construction{" "}
+                    MCR Construction
                   </span>
-                  . Powered and secured by{" "}
+                  . Powered and secured by &nbsp;
                   <span className="underline hover:text-primary duration-500">
                     Wix
                   </span>

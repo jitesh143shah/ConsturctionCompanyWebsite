@@ -1,9 +1,11 @@
 import CountUp from "react-countup";
 import { worker } from "../../images";
 import { useState } from "react";
+// import ScrollTrigger from "react-scroll-trigger";
 
 const About = () => {
   const [finished, setFinished] = useState(false);
+  // const [counterStart, setCounterStart] = useState<boolean>(false);
   return (
     <>
       <div className="relative ">
@@ -30,7 +32,7 @@ const About = () => {
                       <span className="text-3xl md:text-5xl font-bold text-primary capitalize">
                         About Our Company
                       </span>
-                      <p className="font-roboto leading-loose text-justify w-[70%]">
+                      <p className=" text-justify w-[70%]">
                         I'm a paragraph. Click here to add your own text and
                         edit me. It's easy. Just click “Edit Text” or double
                         click me to add your own content and make changes to the
@@ -39,21 +41,41 @@ const About = () => {
                       </p>
                     </div>
                   </div>
+
                   <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
+                    {/* <ScrollTrigger
+                      onEnter={() => setCounterStart(true)}
+                      onExit={() => setCounterStart(false)}
+                    >
+                      <div className="flex flex-col gap-3 ">
+                        <span className="text-4xl md:text-6xl font-bold flex">
+                          {counterStart && (
+                            <CountUp
+                              start={0}
+                              end={1998}
+                              delay={0}
+                              duration={2}
+                            />
+                          )}
+                          {finished && "+"}
+                        </span>
+                        <span className="capitalize">
+                          {" "}
+                          Year of Establishment
+                        </span>
+                        <hr className="w-15" />
+                      </div>{" "}
+                    </ScrollTrigger> */}
                     <div className="flex flex-col gap-3 ">
                       <span className="text-4xl md:text-6xl font-bold flex">
                         <CountUp
                           start={0}
                           end={1998}
                           delay={0}
+                          duration={2}
                           onEnd={() => setFinished(true)}
-                        >
-                          {({ countUpRef }) => (
-                            <div>
-                              <span ref={countUpRef} />
-                            </div>
-                          )}
-                        </CountUp>
+                        />
+
                         {finished && "+"}
                       </span>
                       <span className="capitalize"> Year of Establishment</span>
@@ -65,14 +87,9 @@ const About = () => {
                           start={0}
                           end={335}
                           delay={0}
+                          duration={2}
                           onEnd={() => setFinished(true)}
-                        >
-                          {({ countUpRef }) => (
-                            <div>
-                              <span ref={countUpRef} />
-                            </div>
-                          )}
-                        </CountUp>
+                        />
                         {finished && "+"}
                       </span>
                       <span className="capitalize">Projects Completed</span>
@@ -84,14 +101,9 @@ const About = () => {
                           start={0}
                           end={150}
                           delay={0}
+                          duration={2}
                           onEnd={() => setFinished(true)}
-                        >
-                          {({ countUpRef }) => (
-                            <div>
-                              <span ref={countUpRef} />
-                            </div>
-                          )}
-                        </CountUp>
+                        />
                         {finished && "+"}
                       </span>
                       <span className="capitalize">Professional Employees</span>
@@ -103,20 +115,16 @@ const About = () => {
                           start={0}
                           end={35}
                           delay={0}
+                          duration={2}
                           onEnd={() => setFinished(true)}
-                        >
-                          {({ countUpRef }) => (
-                            <div>
-                              <span ref={countUpRef} />
-                            </div>
-                          )}
-                        </CountUp>
+                        />
                         {finished && "+"}
                       </span>
                       <span className="capitalize">Business Partners</span>
                       <hr className="w-15 " />
                     </div>
                   </div>
+
                   <div className="flex">
                     <div className="flex flex-col items-center justify-center ">
                       <span className="font-cursive text-3xl md:text-5xl italic font-extralight">

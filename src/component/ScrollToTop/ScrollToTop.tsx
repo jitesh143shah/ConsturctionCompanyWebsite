@@ -26,15 +26,12 @@ const ScrollToTop = () => {
     <>
       {isVisible && (
         <div
-          className="relative hover:text-primary text-xl duration-500"
+          // className="relative hover:text-primary text-xl duration-500"
           onClick={scrollToTop}
-          //   className="fixed bottom-6 right-6 p-3 rounded-full bg-primary border-1 border-primary
-          //    text-white shadow-lg hover:bg-gray hover:text-secondary duration-500 transition-all"
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-primary border-1 border-primary
+             text-white shadow-lg hover:bg-gray hover:text-secondary duration-500 transition-all"
         >
-          Go to
-          <div className="absolute top-[-25px] left-3 text-2xl">
-            <FaArrowUp />
-          </div>
+          <FaArrowUp className="text-2xl" />
         </div>
       )}
     </>

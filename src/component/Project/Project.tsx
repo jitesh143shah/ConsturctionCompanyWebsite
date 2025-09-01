@@ -36,10 +36,10 @@ const Project = () => {
               cssMode={true}
               navigation={true}
               breakpoints={{
-                320: { slidesPerView: 1, spaceBetween: 10 }, // 📱 mobile
-                640: { slidesPerView: 2, spaceBetween: 15 }, // small screens
+                // 320: { slidesPerView: 1, spaceBetween: 10 }, // 📱 mobile
+                640: { slidesPerView: 1, spaceBetween: 15 }, // small screens
                 768: { slidesPerView: 2, spaceBetween: 20 }, // tablets
-                1024: { slidesPerView: 4, spaceBetween: 25 }, // desktop
+                1024: { slidesPerView: 3, spaceBetween: 25 }, // desktop
               }}
               // slidesPerView={3}
               // spaceBetween={20}
@@ -54,7 +54,7 @@ const Project = () => {
                     <img
                       src={data.image}
                       alt={data.name}
-                      className="w-full h-full object-cover group-hover:scale-125 duration-500 "
+                      className="w-full h-full object-cover group-hover:scale-111 duration-900 "
                     />
 
                     <div
@@ -62,32 +62,13 @@ const Project = () => {
                    -translate-x-1/2 -translate-y-1/2
                    opacity-0 group-hover:opacity-100
                    bg-gray-800 text-white text-3xl font-bold
-                   px-6 py-3 rounded-lg transition-all duration-300"
+                   px-6 py-3 rounded-lg transition-all duration-900"
                     >
                       {data.name}
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
-              {/* <SwiperSlide>
-                <img src={building} alt="" />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src={building} alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={building} alt="" />
-              </SwiperSlide>
-
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-              <SwiperSlide>Slide 7</SwiperSlide>
-              <SwiperSlide>Slide 8</SwiperSlide>
-              <SwiperSlide>Slide 9</SwiperSlide> */}
             </Swiper>
           </div>
         </div>

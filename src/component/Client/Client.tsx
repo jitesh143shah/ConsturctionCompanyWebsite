@@ -15,17 +15,17 @@ const Client = () => {
   return (
     <>
       <div className="container">
-        <div className="pt-20 pb-10">
+        <div className="py-20">
           <div className="flex flex-col items-center gap-8 ">
-            <span className="text-3xl">Our Clients</span>
-            <span className="text-5xl text-primary font-bold text-center">
-              We believe each client is a <br /> long term partnership
+            <span className="text-2xl md:text-3xl">Our Clients</span>
+            <span className="text-3xl md:text-5xl text-primary font-bold text-center w-[70%]">
+              We believe each client is a long term partnership
             </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 py-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-20">
             {ClientLinks.map((data) => (
               <div className="overflow-hidden  rounded-2xl">
-                <div className="bg-gray-200 h-full w-full  group">
+                <div className="bg-gray-200 h-[200px] w-full  group">
                   <a href={data.href}>
                     <div
                       className="group-hover:bg-red-100 group-hover:scale-150 duration-500
