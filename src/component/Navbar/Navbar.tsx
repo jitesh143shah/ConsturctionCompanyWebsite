@@ -11,10 +11,10 @@ const Navbar = () => {
   return (
     <>
       <div className="z-50 container   ">
-        <nav className=" flex  justify-between pt-10 sticky">
+        <nav className=" flex  justify-between pt-10 ">
           <div
             className="logo flex flex-col justify-center items-center
-          cursor-pointer bg-secondary/70 text-white px-5 border-2 hover:bg-secondary border-primary "
+          cursor-pointer bg-secondary/70 text-white px-3 border-2 hover:bg-secondary border-primary "
           >
             <span className="uppercase text-2xl font-extrabold tracking-wider">
               MCR

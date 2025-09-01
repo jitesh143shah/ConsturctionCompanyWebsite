@@ -42,7 +42,7 @@ const About = () => {
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
+                  <div className="grid lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 md:gap-10">
                     {/* <ScrollTrigger
                       onEnter={() => setCounterStart(true)}
                       onExit={() => setCounterStart(false)}
@@ -67,7 +67,7 @@ const About = () => {
                       </div>{" "}
                     </ScrollTrigger> */}
                     <div className="flex flex-col gap-3 ">
-                      <span className="text-4xl md:text-6xl font-bold flex">
+                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
                         <CountUp
                           start={0}
                           end={1998}
@@ -82,7 +82,7 @@ const About = () => {
                       <hr className="w-15" />
                     </div>
                     <div className="flex flex-col gap-3 ">
-                      <span className="text-4xl md:text-6xl  font-bold flex">
+                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
                         <CountUp
                           start={0}
                           end={335}
@@ -96,7 +96,7 @@ const About = () => {
                       <hr className="w-15" />
                     </div>
                     <div className="flex flex-col gap-3 ">
-                      <span className="text-4xl md:text-6xl font-bold flex">
+                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
                         <CountUp
                           start={0}
                           end={150}
@@ -110,7 +110,7 @@ const About = () => {
                       <hr className="w-15" />
                     </div>
                     <div className="flex flex-col gap-3 ">
-                      <span className="text-4xl md:text-6xl font-bold flex">
+                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
                         <CountUp
                           start={0}
                           end={35}
@@ -127,7 +127,7 @@ const About = () => {
 
                   <div className="flex">
                     <div className="flex flex-col items-center justify-center ">
-                      <span className="font-cursive text-3xl md:text-5xl italic font-extralight">
+                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
                         A.Masterson
                       </span>
                       <span className=" font-bold text-xl md:text-2xl">
