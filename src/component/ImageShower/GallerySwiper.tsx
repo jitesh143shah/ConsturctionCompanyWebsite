@@ -21,7 +21,7 @@ export default function GallerySwiper() {
             <SwiperSlide key={data.id}>
               <div
                 className="relative group w-full h-[500px] cursor-pointer"
-                onClick={() => setSelectedImage(data)}
+                onClick={() => setSelectedImage(null)}
               >
                 <img
                   src={data.image}
@@ -58,8 +58,8 @@ export default function GallerySwiper() {
             <Swiper slidesPerView={1}>
               <SwiperSlide>
                 <img
-                  src={selectedImage.image}
-                  alt={selectedImage.name}
+                  // src={selectedImage.null}
+                  // alt={selectedImage.image}
                   className=" rounded-xl shadow-md"
                 />
               </SwiperSlide>
@@ -68,8 +68,8 @@ export default function GallerySwiper() {
 
           {/* Right: Text Details */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4">{selectedImage.name}</h2>
-            <p className="text-lg text-gray-700">{selectedImage.description}</p>
+            {/* <h2 className="text-3xl font-bold mb-4">{selectedImage.name}</h2>
+            <p className="text-lg text-gray-700">{selectedImage.description}</p> */}
           </div>
         </div>
       )}
