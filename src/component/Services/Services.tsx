@@ -22,7 +22,7 @@ const Services = () => {
               <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary w-[70%]">
                 We Offer a Range of Services to Meet Your Needs
               </span>
-              <p className="tracking-normal [word-spacing:0.4rem] w-[80%] ">
+              <p className=" w-[80%] text-justify">
                 I'm a paragraph. Click here to add your own text and edit me.{" "}
                 Let your users get to know you.
               </p>

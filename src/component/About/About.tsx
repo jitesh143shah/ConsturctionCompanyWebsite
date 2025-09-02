@@ -1,11 +1,17 @@
 import CountUp from "react-countup";
 import { worker } from "../../images";
 import { useState } from "react";
-// import ScrollTrigger from "react-scroll-trigger";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
   const [finished, setFinished] = useState(false);
   // const [counterStart, setCounterStart] = useState<boolean>(false);
+
+  const { ref, inView } = useInView({
+    triggerOnce: false, // 👈 keeps triggering every time section enters
+    threshold: 0.5, // 50% of the section must be visible
+  });
+
   return (
     <>
       <div className="relative ">
@@ -19,11 +25,11 @@ const About = () => {
             className=" top-0 left-0 w-full h-full z-[-50] absolute"
           /> */}
         </div>
-        <div className="bg-black/40 py-30 md:py-40 -z-10 ">
+        <div className="bg-black/40 py-15 md:py-30 -z-10 ">
           <div className="container text-white">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr]  gap-10">
               <div className="flex   items-center justify-center     ">
-                <div className="flex flex-col gap-10 md:gap-15">
+                <div className="flex flex-col gap-5 md:gap-15">
                   <div className="grid grid-cols-1  ">
                     <div className="flex flex-col gap-5">
                       <span className="text-xl md:text-2xl font-bold capitalize">
@@ -67,14 +73,18 @@ const About = () => {
                       </div>{" "}
                     </ScrollTrigger> */}
                     <div className="flex flex-col gap-3 ">
-                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
-                        <CountUp
-                          start={0}
-                          end={1998}
-                          delay={0}
-                          duration={2}
-                          onEnd={() => setFinished(true)}
-                        />
+                      <span
+                        className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex"
+                        ref={ref}
+                      >
+                        {inView && (
+                          <CountUp
+                            start={0}
+                            end={1998}
+                            duration={2}
+                            onEnd={() => setFinished(true)}
+                          />
+                        )}
 
                         {finished && "+"}
                       </span>
@@ -82,42 +92,64 @@ const About = () => {
                       <hr className="w-15" />
                     </div>
                     <div className="flex flex-col gap-3 ">
-                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
-                        <CountUp
-                          start={0}
-                          end={335}
-                          delay={0}
-                          duration={2}
-                          onEnd={() => setFinished(true)}
-                        />
+                      <span
+                        className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex "
+                        ref={ref}
+                      >
+                        {inView && (
+                          <CountUp
+                            start={0}
+                            end={150}
+                            duration={2}
+                            onEnd={() => setFinished(true)}
+                          />
+                        )}
+
                         {finished && "+"}
                       </span>
                       <span className="capitalize">Projects Completed</span>
                       <hr className="w-15" />
                     </div>
                     <div className="flex flex-col gap-3 ">
-                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
-                        <CountUp
-                          start={0}
-                          end={150}
-                          delay={0}
-                          duration={2}
-                          onEnd={() => setFinished(true)}
-                        />
+                      <span
+                        className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex"
+                        ref={ref}
+                      >
+                        {inView && (
+                          <CountUp
+                            start={0}
+                            end={282}
+                            duration={2}
+                            onEnd={() => setFinished(true)}
+                          />
+                        )}
+
                         {finished && "+"}
                       </span>
                       <span className="capitalize">Professional Employees</span>
                       <hr className="w-15" />
                     </div>
                     <div className="flex flex-col gap-3 ">
-                      <span className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex">
-                        <CountUp
+                      <span
+                        className="md:text-4xl text-2xl lg:text-5xl xl:text-6xl font-bold flex"
+                        ref={ref}
+                      >
+                        {/* <CountUp
                           start={0}
                           end={35}
                           delay={0}
                           duration={2}
                           onEnd={() => setFinished(true)}
-                        />
+                        /> */}
+
+                        {inView && (
+                          <CountUp
+                            start={0}
+                            end={35}
+                            duration={2}
+                            onEnd={() => setFinished(true)}
+                          />
+                        )}
                         {finished && "+"}
                       </span>
                       <span className="capitalize">Business Partners</span>

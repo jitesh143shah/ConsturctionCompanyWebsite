@@ -1,13 +1,15 @@
 // import { construction } from "../../images";
 
-import { VideoTwo } from "../../video";
+// import { construction } from "../../images";
+
 import Navbar from "../Navbar/Navbar";
+import { VideoTwo } from "../../video";
 
 const Hero = () => {
   return (
     <>
       <div className="    ">
-        <div className="relative pb-25 ">
+        <div className="relative ">
           <div className="absolute z-[-10] h-[100%] w-[100%]">
             {/* <img
               src={construction}
@@ -32,10 +34,10 @@ const Hero = () => {
           </div>
           <div className="flex container flex-col text-white  justify-center  h-[100%] ">
             <div
-              className="flex flex-col justify-center my-30 sm:mx-10  md:mx-50
-            gap-10 md:gap-15 h-full"
+              className="flex flex-col justify-center my-20 sm:mx-10  md:mx-50
+            gap-7 md:gap-15 h-full"
             >
-              <span className="text-5xl md:text-7xl lg:text-9xl font-roboto font-semibold">
+              <span className="text-5xl md:text-7xl lg:text-7xl font-roboto font-semibold ">
                 Building a <br /> Concert Future
               </span>
               <span className="text-2xl  md:text-4xl font-semibold">

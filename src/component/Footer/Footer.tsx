@@ -57,8 +57,8 @@ const Footer = () => {
                           </div>
                           <div>
                             <Icons
-                              className="h-[25px] w-full group-hover:text-white"
                               style={{ color: color }} // must be an object
+                              className="h-[25px] w-full group-hover:text-white"
                             />
                           </div>
                         </a>
@@ -79,7 +79,7 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex flex-col gap-5 ">
-                <div className="flex items-center justify-center ">
+                <div className="flex items-center justify-center px-25 md:px-0 ">
                   <button
                     className="border-1 border-white text-white  bg-primary hover:bg-white
                hover:text-secondary px-12 py-4 duration-500 w-full"

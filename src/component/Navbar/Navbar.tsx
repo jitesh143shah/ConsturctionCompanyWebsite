@@ -1,67 +1,58 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navlinks } from "../../constants/Navlinks.js";
 import { IoClose, IoMenu } from "react-icons/io5";
 import ResponsiveMenu from "./ResponsiveMenu.js";
 
 const Navbar = () => {
+  const [isFixed, setIsFixed] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const toogleMenu = () => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // When scrolled more than 50px, make navbar fixed
+      setIsFixed(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <>
-      <div className="z-50 container   ">
-        <nav className=" flex  justify-between pt-10 ">
+      <nav
+        className={`w-full transition-all duration-300 ${
+          isFixed
+            ? "fixed top-0 left-0 bg-primary/40 shadow-md z-50 "
+            : "relative bg-transparent pt-2"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-10 md:px-6 py-2 ">
+          {/* Logo */}
           <div
             className="logo flex flex-col justify-center items-center
-          cursor-pointer bg-secondary/70 text-white px-3 border-2 hover:bg-secondary border-primary "
+            cursor-pointer bg-secondary/70 text-white px-3 border-2 hover:bg-secondary border-primary "
           >
             <span className="uppercase text-2xl font-extrabold tracking-wider">
               MCR
             </span>
             <span>Construction</span>
           </div>
-          <div className=" hidden  md:flex items-center justify-center  gap-0.5  font-bold  ">
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-0.5 font-bold">
             <div className="border-2 border-primary">
-              {/* <ul className="flex items-center text-1xl  cursor-pointer ">
+              <ul className="flex items-center text-1xl cursor-pointer">
+                {Navlinks.map((data, index) => (
                   <li
-                    className="w-full h-full p-5 hover:bg-white hover:text-secondary
-                  bg-secondary/70 text-white  duration-500 "
+                    key={index}
+                    className="w-[100px] py-5 flex justify-center hover:bg-white hover:text-secondary
+                      bg-secondary/70 text-white duration-500"
                   >
-                    <a href="#">Services</a>
-                  </li>
-                  <li
-                    className="w-full h-full p-5 hover:bg-white hover:text-secondary
-            bg-secondary/70 text-white duration-500 "
-                  >
-                    <a href="#">Project</a>
-                  </li>
-                  <li
-                    className="w-full h-full p-5 hover:bg-white hover:text-secondary
-             bg-secondary/70  text-white duration-500 "
-                  >
-                    <a href="#">About </a>
-                  </li>
-                  <li
-                    className="w-full h-full p-5 hover:bg-white hover:text-secondary
-            bg-secondary/70 text-white  duration-500"
-                  >
-                    <a href="#">Careers</a>
-                  </li>
-                  <li
-                    className="w-full h-full p-5 hover:bg-white hover:text-secondary
-              bg-secondary/70 text-white  duration-500"
-                  >
-                    <a href="#">Contact</a>
-                  </li>
-                </ul> */}
-              <ul className="flex items-center   text-1xl  cursor-pointer ">
-                {Navlinks.map((data) => (
-                  <li
-                    className="w-[100px] h-full py-5 flex justify-center hover:bg-white hover:text-secondary
-                      bg-secondary/70 text-white  duration-500"
-                  >
-                    <a className="uppercase " href={data.link}>
+                    <a className="uppercase" href={data.link}>
                       {data.name}
                     </a>
                   </li>
@@ -69,31 +60,34 @@ const Navbar = () => {
               </ul>
             </div>
             <div
-              className="bg-primary h-full w-full flex items-center justify-center border-2
-             border-primary px-12 hover:bg-secondary
-                 hover:text-white duration-500"
+              className="bg-primary h-full flex items-center justify-center border-2
+             border-primary px-12 py-3 md:py-5 hover:bg-secondary hover:text-white duration-500"
             >
-              <button className=" flex items-center w-full h-full justify-center   ">
+              <button className="flex items-center justify-center">
                 Call Now!
               </button>
             </div>
           </div>
-          <div className=" md:hidden flex text-primary pr-20 z-50 fixed top-10 -right-5 ">
+
+          {/* Mobile Menu Icon */}
+          <div className="md:hidden flex text-white z-50 justify-center items-center">
             {showMenu ? (
               <IoClose
-                onClick={toogleMenu}
-                className="  text-6xl flex justify-center items-center duration-500 cursor-pointer"
+                onClick={toggleMenu}
+                className="text-5xl duration-500 cursor-pointer"
               />
             ) : (
               <IoMenu
-                onClick={toogleMenu}
-                className="text-6xl flex justify-center items-center duration-500 cursor-pointer"
+                onClick={toggleMenu}
+                className="text-5xl duration-500 cursor-pointer"
               />
             )}
           </div>
-        </nav>
-        <ResponsiveMenu showMenu={showMenu} />
-      </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <ResponsiveMenu showMenu={showMenu} />
     </>
   );
 };

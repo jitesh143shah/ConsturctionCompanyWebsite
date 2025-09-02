@@ -30,14 +30,14 @@ const Testimonials = () => {
             </div>
 
             <div className="">
-              <div className=" py-5 md:py-20">
+              <div className=" py-0 md:py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-                  <div className="flex flex-col gap-8 justify-center">
+                  <div className="flex flex-col gap-5">
                     <hr className="w-15" />
                     <span className="text-2xl font-bold capitalize">
                       Commercial
                     </span>
-                    <p className="text-jus mt-6  space-y-5 flex flex-col">
+                    <p className="text-jus mt-2  space-y-5 flex flex-col">
                       <span className="text-justify">
                         I'm a paragraph. Click here to add your own text and
                         edit me. It's easy. Just click “Edit Text” or double
@@ -70,7 +70,7 @@ const Testimonials = () => {
                     <img
                       src={building}
                       alt="Building"
-                      className="object-cover h-[400px] md:h-full w-full "
+                      className="object-cover  md:h-full w-full "
                     />
                   </div>
                 </div>
@@ -89,17 +89,17 @@ const Testimonials = () => {
                       />
                     </div> */}
                     <div
-                      className="h-[400px] md:h-[1000px]  bg-fixed bg-center bg-cover
+                      className="hidden md:block  md:h-[1000px]  bg-fixed bg-center bg-cover
                       bg-no-repeat "
                       style={{ backgroundImage: `url(${bridge}) ` }}
                     ></div>
                   </div>
-                  <div className="flex flex-col gap-8 justify-center">
+                  <div className="flex flex-col gap-5 ">
                     <hr className="w-15" />
                     <span className="text-2xl font-bold capitalize">
                       Infrastructure
                     </span>
-                    <p className="text-justify mt-6 space-y-5  flex flex-col ">
+                    <p className="text-justify mt-2 space-y-5  flex flex-col ">
                       <span className="text-justify">
                         I'm a paragraph. Click here to add your own text and
                         edit me. It's easy. Just click “Edit Text” or double
@@ -138,10 +138,10 @@ const Testimonials = () => {
                     <img
                       src={foundation}
                       alt="Building"
-                      className="w-full h-[400px] md:h-full"
+                      className="w-full md:h-full"
                     />
                   </div>
-                  <div className="flex flex-col gap-8 justify-center">
+                  <div className="flex flex-col gap-5 ">
                     <hr className="w-15" />
                     <span className="text-2xl font-bold capitalize">
                       Residential
@@ -150,11 +150,11 @@ const Testimonials = () => {
                       <img
                         src={construction}
                         alt="Construction"
-                        className="object-cover w-[100%] h-[400px] md:h-full  "
+                        className="object-cover w-[100%]  md:h-full  "
                       />
                     </div>
 
-                    <p className=" mt-6  space-y-5 flex flex-col ">
+                    <p className=" mt-2  space-y-5 flex flex-col ">
                       <span className="text-justify">
                         I'm a paragraph. Click here to add your own text and
                         edit me. It's easy. Just click “Edit Text” or double
