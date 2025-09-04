@@ -67,47 +67,86 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="bg-secondary/30 px-10 py-15 ">
+            <div className="bg-secondary/30 px-10 py-15 font-roboto  ">
               <form action="">
-                <h1 className="text-2xl md:text-4xl font-bold">
+                <h1 className="text-2xl md:text-4xl font-bold pb-10 ">
                   General Inquiries
                 </h1>
-                <div className="flex flex-col gap-5 bg-amber-700 ">
-                  <div className="flex flex-col md:flex-row">
+                <div className="flex flex-col gap-5 ">
+                  <div className="flex flex-col md:flex-row w-full gap-5 ">
                     <div>
                       <label htmlFor="fname">
-                        <span>First Name:</span>
+                        <span className="mt-3">First Name:</span>
                       </label>
-                      <input type="text" id="fname" className="bg-white/50" />
+                      <input
+                        type="text"
+                        id="fname"
+                        className="bg-white/50  px-3 py-4 w-full
+                         focus:bg-primary/90 focus:text-white focus:text-green "
+                        placeholder="Enter Your First Name"
+                        required
+                      />
                     </div>
                     <div>
                       <label htmlFor="lname">
                         <span>Last Name:</span>
                       </label>
-                      <input type="text" id="lname" className="bg-white/50" />
+                      <input
+                        type="text"
+                        id="lname"
+                        className="bg-white/50  px-3 py-4 w-full focus:bg-primary/90 focus:text-white focus:text-green "
+                        placeholder="Enter Your Last Name"
+                        required
+                      />
                     </div>
                   </div>
                   <div>
                     <label htmlFor="email">
-                      <span>Email:</span>
+                      <span className="flex  gap-1 ">
+                        Email:
+                        <FaStar className="text-red-500 text-[8px]" />
+                      </span>
                     </label>
-                    <input type="email" id="email" className="bg-white/50" />
+                    <input
+                      type="email"
+                      id="email"
+                      className="bg-white/50  px-3 py-4 w-full focus:bg-primary/90 focus:text-white focus:text-green "
+                      placeholder="Enter Your Email Here"
+                      required
+                    />
                   </div>
                   <div>
                     <label htmlFor="number">
-                      <span>Mobile Number:</span>{" "}
+                      <span>Mobile Number:</span>
                       <input
                         type="number"
                         id="number"
-                        className="bg-white/50"
+                        className="bg-white/50  px-3 py-4 w-full focus:bg-primary/90 focus:text-white focus:text-green "
+                        placeholder="Enter Your Mobile Number"
+                        required
                       />
                     </label>
                   </div>
-                  <div className="flex ">
-                    <label htmlFor="message">
+                  <div className="flex w-full">
+                    <label
+                      htmlFor="message"
+                      className="w-full focus:bg-primary/90 focus:text-white focus:text-green "
+                    >
                       <span>Message:</span>
-                      <textarea id="message" className="bg-white/50"></textarea>
+                      <textarea
+                        id="message"
+                        className="bg-white/50 px-3 py-4 w-full focus:bg-primary/90 focus:text-white focus:text-green "
+                        placeholder="Share  why you are contacting"
+                        required
+                      ></textarea>
                     </label>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <button className="bg-black py-4 md:px-25 xl:px-35 px-15 rounded-full cursor-pointer hover:bg-primary duration-500">
+                        Send
+                      </button>
+                    </a>
                   </div>
                 </div>
               </form>

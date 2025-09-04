@@ -43,19 +43,19 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-0.5 font-bold">
+          <div className="hidden lg:flex items-center gap-0.5 font-bold">
             <div className="border-2 border-primary">
               <ul className="flex items-center text-1xl cursor-pointer">
                 {Navlinks.map((data, index) => (
-                  <li
-                    key={index}
-                    className="w-[100px] py-5 flex justify-center hover:bg-white hover:text-secondary
+                  <a className="uppercase" href={data.link} target="">
+                    <li
+                      key={index}
+                      className="w-[100px] py-5 flex justify-center hover:bg-white hover:text-secondary
                       bg-secondary/70 text-white duration-500"
-                  >
-                    <a className="uppercase" href={data.link} target="_blank">
+                    >
                       {data.name}
-                    </a>
-                  </li>
+                    </li>{" "}
+                  </a>
                 ))}
               </ul>
             </div>
@@ -72,16 +72,16 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Icon */}
-          <div className="md:hidden flex text-white z-50 justify-center items-center">
+          <div className="lg:hidden flex text-white z-50 justify-center items-center">
             {showMenu ? (
               <IoClose
                 onClick={toggleMenu}
-                className="text-3xl duration-500 cursor-pointer"
+                className="text-3xl md:text-5xl duration-500 cursor-pointer"
               />
             ) : (
               <IoMenu
                 onClick={toggleMenu}
-                className="text-3xl duration-500 cursor-pointer"
+                className="text-3xl md:text-5xl duration-500 cursor-pointer"
               />
             )}
           </div>

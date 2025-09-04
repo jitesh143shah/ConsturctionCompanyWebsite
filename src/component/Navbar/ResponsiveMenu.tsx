@@ -5,7 +5,7 @@ const ResponsiveMenu = ({ showMenu }: { showMenu: boolean }) => {
     <>
       <div>
         <div
-          className={`md:hidden
+          className={`lg:hidden
            fixed h-screen w-[75%] bg-gray-600
            flex flex-col justify-between px-8 py-6 pt-16 z-50
            duration-500 transition-all ease-in-out
@@ -21,14 +21,16 @@ const ResponsiveMenu = ({ showMenu }: { showMenu: boolean }) => {
             </span>
             <span>Construction</span>
           </div>
-          <div className=" flex justify-between flex-col gap-5 pt-20">
+          <div className=" flex justify-between flex-col gap-1 pt-20">
             {Navlinks.map((data) => (
-              <ul className=" flex flex-col items-center capitalize text-1xl text-white">
-                <li key={data.id}>
-                  <a href={data.link} target="_blank">
-                    {data.name}
-                  </a>
-                </li>
+              <ul className=" flex flex-col items-center capitalize text-1xl md:text-2xl text-white">
+                <a
+                  href={data.link}
+                  target=""
+                  className="hover:bg-primary/80 py-2  w-full items-center flex justify-center duration-500"
+                >
+                  <li key={data.id}>{data.name}</li>
+                </a>
               </ul>
             ))}
             <div className="flex items-center justify-center px-5 mt-10">
