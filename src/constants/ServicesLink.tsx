@@ -7,10 +7,10 @@ import { SlSettings } from "react-icons/sl";
 import { TbBuildingChurch } from "react-icons/tb";
 
 export const ServicesLink = [
-  {
-    icons: "",
-    title: "",
-  },
+  // {
+  //   icons: "",
+  //   title: "",
+  // },
   {
     icons: BsBuildings,
     title: " Commercial Construction",

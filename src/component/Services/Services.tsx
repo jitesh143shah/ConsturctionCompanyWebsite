@@ -1,10 +1,11 @@
-import { BsBuildings } from "react-icons/bs";
-import { FaUserAstronaut } from "react-icons/fa";
-import { GiBlackBook, GiBulldozer } from "react-icons/gi";
-import { IoHomeOutline } from "react-icons/io5";
-import { PiShovelBold } from "react-icons/pi";
-import { SlSettings } from "react-icons/sl";
-import { TbBuildingChurch } from "react-icons/tb";
+// import { BsBuildings } from "react-icons/bs";
+// import { FaUserAstronaut } from "react-icons/fa";
+// import { GiBlackBook, GiBulldozer } from "react-icons/gi";
+// import { IoHomeOutline } from "react-icons/io5";
+// import { PiShovelBold } from "react-icons/pi";
+// import { SlSettings } from "react-icons/sl";
+// import { TbBuildingChurch } from "react-icons/tb";
+import { ServicesLink } from "../../constants/ServicesLink";
 
 const Services = () => {
   return (
@@ -41,12 +42,26 @@ const Services = () => {
           </div>
           <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4  justify-center items-center">
-
-{}
-
               <div className="hidden md:flex"></div>
+              {ServicesLink.map(({ title, icons: Icons }, index) => (
+                <a
+                  href="#"
+                  key={index}
+                  className="flex group flex-col  duration-500 hover:translate-x-1
+               hover:bg-amber-100 w-full h-full    gap-5 bg-amber-50 py-15 md:py-20 px-10 "
+                >
+                  <Icons
+                    className="text-primary text-3xl md:text-6xl font-extralight
+                  group-hover:translate-x-20 md:group-hover:translate-x-15
+                duration-500 "
+                  />
+                  <span className="text-xl md:text-2xl text-center">
+                    {title}
+                  </span>
+                </a>
+              ))}
 
-              <div
+              {/* <div
                 className="flex group flex-col  duration-500 hover:translate-x-1
                hover:bg-amber-100 w-full h-full    gap-5 bg-amber-50 py-15 md:py-20 px-10 "
               >
@@ -147,7 +162,7 @@ const Services = () => {
                   Landscape Construction
                 </span>
               </div>
-              <div className="hidden md:flex"></div>
+              <div className="hidden md:flex"></div> */}
             </div>
           </div>
         </div>
