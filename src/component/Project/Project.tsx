@@ -8,6 +8,7 @@ import "../../App.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 // import { building } from "../../images";
 import { ImagesLinks } from "../../constants/ImagesLinks";
+import { FaFaceAngry } from "react-icons/fa6";
 
 const Project = () => {
   return (
@@ -22,9 +23,9 @@ const Project = () => {
               <span className="text-3xl md:text-5xl font-bold text-primary">
                 Our Projects
               </span>
-              <p className="tracking-normal w-[70%] text-justify">
-                I'm a paragraph. Click here to add your own text and edit me.{" "}
-                I’m a great place for you to tell a story and let your users{" "}
+              <p className="tracking-normal w-full md:w-[70%] text-justify">
+                I'm a paragraph. Click here to add your own text and edit me.
+                I’m a great place for you to tell a story and let your users
                 know a little more about you.
               </p>
             </div>
@@ -36,7 +37,6 @@ const Project = () => {
               cssMode={true}
               navigation={true}
               breakpoints={{
-                // 320: { slidesPerView: 1, spaceBetween: 10 }, // 📱 mobile
                 640: { slidesPerView: 1, spaceBetween: 15 }, // small screens
                 768: { slidesPerView: 2, spaceBetween: 20 }, // tablets
                 1024: { slidesPerView: 3, spaceBetween: 25 }, // desktop
@@ -45,7 +45,6 @@ const Project = () => {
               // spaceBetween={20}
               mousewheel={true}
               keyboard={true}
-              // loop={true}
               className="mySwiper"
             >
               {ImagesLinks.map((data) => (
@@ -54,7 +53,7 @@ const Project = () => {
                     <img
                       src={data.image}
                       alt={data.name}
-                      className="w-full h-full object-cover group-hover:scale-111 duration-900 "
+                      className="w-full h-full object-cover group-hover:scale-111 duration-900 -z-10"
                     />
 
                     <div
@@ -69,6 +68,7 @@ const Project = () => {
                   </div>
                 </SwiperSlide>
               ))}
+              <FaFaceAngry />
             </Swiper>
           </div>
         </div>

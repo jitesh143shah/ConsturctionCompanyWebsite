@@ -27,7 +27,7 @@ const About = () => {
         </div>
         <div className="bg-black/40 py-15 md:py-30 -z-10 ">
           <div className="container text-white">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr]  gap-10">
+            <div className="grid grid-cols-1  lg:grid-cols-[2fr_1fr]  gap-10">
               <div className="flex   items-center justify-center     ">
                 <div className="flex flex-col gap-5 md:gap-15">
                   <div className="grid grid-cols-1  ">
@@ -38,7 +38,7 @@ const About = () => {
                       <span className="text-3xl md:text-5xl font-bold text-primary capitalize">
                         About Our Company
                       </span>
-                      <p className=" text-justify w-[70%]">
+                      <p className=" text-justify w-full  xl:w-[70%] ">
                         I'm a paragraph. Click here to add your own text and
                         edit me. It's easy. Just click “Edit Text” or double
                         click me to add your own content and make changes to the

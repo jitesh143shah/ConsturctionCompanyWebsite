@@ -12,10 +12,10 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 ">
               <div
                 className="logo flex flex-col justify-center items-center h-fit w-fit
-                 cursor-pointer bg-secondary/70 text-white px-5  py-1 border-2 duration-500
+                 cursor-pointer bg-secondary/70 text-white px-3  py-1 border-2 duration-500
                   hover:bg-secondary border-primary "
               >
-                <span className="uppercase text-2xl ">MCR</span>
+                <span className="uppercase text-xl ">MCR</span>
                 <span>Construction</span>
               </div>
               <div className="flex flex-col gap-5">
@@ -79,13 +79,14 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex flex-col gap-5 ">
-                <div className="flex items-center justify-center px-25 md:px-0 ">
-                  <button
+                <div className="flex items-center justify-center px-15 sm:px-20 md:px-0 ">
+                  <a
+                    href="#"
                     className="border-1 border-white text-white  bg-primary hover:bg-white
-               hover:text-secondary px-12 py-4 duration-500 w-full"
+               hover:text-secondary px-5 sm:px-12 py-2 md:py-4 duration-500 w-full text-center"
                   >
-                    Contact Us
-                  </button>
+                    <button className="cursor-pointer">Contact Us</button>
+                  </a>
                 </div>
               </div>
             </div>

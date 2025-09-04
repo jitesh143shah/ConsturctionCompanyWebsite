@@ -8,24 +8,26 @@ const Testimonials = () => {
           <div>
             <div
               className="flex flex-col md:flex-row md:justify-between
-             md:items-center gap-10 font-roboto py-10 md:py-20  "
+             md:items-center gap-5  md:gap-10 font-roboto py-10 md:py-20  "
             >
               <div className="flex flex-col gap-5">
-                <span className="text-xl md:text-2xl font-poppins capitalize ">
+                <span className="text-1xl md:text-2xl font-poppins capitalize ">
                   Building Is What We Do
                 </span>
-                <span className="text-3xl md:text-5xl capitalize w-[80%] font-bold text-primary ">
+                <span className="text-2xl md:text-5xl capitalize w-[80%] font-bold text-primary ">
                   MCR Construction Is Leading Quality Projects
                 </span>
               </div>
               <div>
-                <div
-                  className="bg-primary px-8 md:px-15 py-2 md:py-4 hover:bg-gray border-1
-                   border-primary w-1/2 md:w-full flex  justify-center
-           hover:border-secondary hover:text-secondary duration-500 "
-                >
-                  Read More
-                </div>
+                <a href="#">
+                  <div
+                    className="bg-primary md:w-sm px-2 md:px-15 py-2 md:py-4 hover:bg-gray border-1
+                   border-primary w-1/2 md:w-full flex  justify-center text-center
+           hover:border-secondary  duration-500 hover:text-primary"
+                  >
+                    Read More
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -70,7 +72,7 @@ const Testimonials = () => {
                     <img
                       src={building}
                       alt="Building"
-                      className="object-cover  md:h-full w-full "
+                      className="object-cover h-[300px] md:h-full w-full "
                     />
                   </div>
                 </div>
@@ -138,7 +140,7 @@ const Testimonials = () => {
                     <img
                       src={foundation}
                       alt="Building"
-                      className="w-full md:h-full"
+                      className="w-full  h-[300px] md:h-full"
                     />
                   </div>
                   <div className="flex flex-col gap-5 ">
@@ -150,7 +152,7 @@ const Testimonials = () => {
                       <img
                         src={construction}
                         alt="Construction"
-                        className="object-cover w-[100%]  md:h-full  "
+                        className="object-cover w-[100%]  h-[300px]  md:h-full  "
                       />
                     </div>
 

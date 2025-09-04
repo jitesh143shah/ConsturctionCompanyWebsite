@@ -27,7 +27,7 @@ const ResponsiveScrollToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 rounded-full bg-primary  border-1 border-primary
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-primary  border-1 border-primary z-10
              text-white shadow-lg hover:bg-gray hover:text-secondary duration-500 transition-all"
         >
           <FaAngleDoubleUp size={20} />

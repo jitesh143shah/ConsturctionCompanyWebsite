@@ -9,7 +9,7 @@ import { TbBuildingChurch } from "react-icons/tb";
 const Services = () => {
   return (
     <>
-      <div className="bg-gray py-20 md:py-40 ">
+      <div className="bg-gray py-15 md:py-30 ">
         <div className="container">
           <div
             className="flex  md:justify-between items-start md:items-center  font-roboto
@@ -22,19 +22,21 @@ const Services = () => {
               <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary w-[70%]">
                 We Offer a Range of Services to Meet Your Needs
               </span>
-              <p className=" w-[80%] text-justify">
-                I'm a paragraph. Click here to add your own text and edit me.{" "}
+              <p className=" w-full  md:w-[80%] text-justify">
+                I'm a paragraph. Click here to add your own text and edit me.
                 Let your users get to know you.
               </p>
             </div>
-            <div>
-              <div
-                className="bg-primary px-8 md:px- py-2 md:py-4 hover:bg-gray border-1
-                   border-primary flex flex-col
-           hover:border-secondary hover:text-secondary duration-500"
-              >
-                Read More
-              </div>
+            <div className="md:w-sm">
+              <a href="#">
+                <div
+                  className="bg-primary px-10 md:px-8 xl:px-10 py-2 md:py-4 hover:bg-gray border-1
+                   border-primary flex flex-col text-center
+           hover:border-secondary hover:text-primary duration-500"
+                >
+                  Read More
+                </div>
+              </a>
             </div>
           </div>
           <div className="">

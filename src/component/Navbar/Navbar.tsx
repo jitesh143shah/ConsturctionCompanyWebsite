@@ -26,21 +26,21 @@ const Navbar = () => {
       <nav
         className={`w-full transition-all duration-300 ${
           isFixed
-            ? "fixed top-0 left-0 bg-primary/40 shadow-md z-50 "
-            : "relative bg-transparent pt-2"
+            ? "fixed top-0 left-0 bg-black md:bg-black/0 shadow-md md:shadow-none z-50 "
+            : "relative bg-transparent "
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center px-10 md:px-6 py-2 ">
-          {/* Logo */}
-          <div
-            className="logo flex flex-col justify-center items-center
-            cursor-pointer bg-secondary/70 text-white px-3 border-2 hover:bg-secondary border-primary "
+          <a
+            href="#"
+            className="logo flex flex-col  justify-center items-center text-center h-fit py-1
+            cursor-pointer bg-secondary/70 text-white  md:px-3 px-1 border-2 hover:bg-secondary border-primary "
           >
-            <span className="uppercase text-2xl font-extrabold tracking-wider">
+            <span className="uppercase text-1xl md:text-2xl font-extrabold tracking-wider w-full">
               MCR
             </span>
             <span>Construction</span>
-          </div>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-0.5 font-bold">
@@ -52,21 +52,23 @@ const Navbar = () => {
                     className="w-[100px] py-5 flex justify-center hover:bg-white hover:text-secondary
                       bg-secondary/70 text-white duration-500"
                   >
-                    <a className="uppercase" href={data.link}>
+                    <a className="uppercase" href={data.link} target="_blank">
                       {data.name}
                     </a>
                   </li>
                 ))}
               </ul>
             </div>
-            <div
-              className="bg-primary h-full flex items-center justify-center border-2
-             border-primary px-12 py-3 md:py-5 hover:bg-secondary hover:text-white duration-500"
-            >
-              <button className="flex items-center justify-center">
-                Call Now!
-              </button>
-            </div>
+            <a href="https://web.whatsapp.com/" target="_blank">
+              <div
+                className="bg-primary h-full flex items-center justify-center border-2
+             border-primary md:px-5 lg:px-12 py-3 md:py-5 hover:bg-secondary hover:text-white duration-500"
+              >
+                <button className="flex items-center justify-center">
+                  Call Now!
+                </button>
+              </div>
+            </a>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -74,12 +76,12 @@ const Navbar = () => {
             {showMenu ? (
               <IoClose
                 onClick={toggleMenu}
-                className="text-5xl duration-500 cursor-pointer"
+                className="text-3xl duration-500 cursor-pointer"
               />
             ) : (
               <IoMenu
                 onClick={toggleMenu}
-                className="text-5xl duration-500 cursor-pointer"
+                className="text-3xl duration-500 cursor-pointer"
               />
             )}
           </div>
