@@ -21,8 +21,8 @@ const Testimonials = () => {
               <div>
                 <a href="#">
                   <div
-                    className="bg-primary md:w-sm px-2 md:px-15 py-2 md:py-4 hover:bg-gray border-1
-                   border-primary w-1/2 md:w-full flex  justify-center text-center
+                    className="bg-primary w-sm px-2 md:px-15 py-2 md:py-4 hover:bg-gray border-1
+                   border-primary md:w-full flex  justify-center text-center
            hover:border-secondary  duration-500 hover:text-primary"
                   >
                     Read More

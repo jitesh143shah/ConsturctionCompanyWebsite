@@ -10,11 +10,13 @@ const ContactPage = () => {
       <div className="bg-gray-600">
         <Navbar />
         <div className="container text-white py-7  md:py-10  ">
-          <div>
-            <h1 className="capitalize text-center text-4xl md:text-6xl lg:text-8xl font-bold pb-12">
+          <div className="mb-5">
+            <h1 className="capitalize text-center text-4xl md:text-6xl lg:text-8xl font-bold pb-12
+            bg-fixed bg-center bg-cover h-[400px] justify-center flex items-center rounded-b-[15%]                       bg-no-repeat
+             " 
+           style={{ backgroundImage: `url(${construction})  ` }}>
               Conctact Us
             </h1>
-            <img src={construction} alt="" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className="flex flex-col gap-5 bg-secondary/20 py-5 px-5 pr-15">
