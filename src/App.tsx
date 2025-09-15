@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route,  Routes } from "react-router-dom";
 import "./App.css";
 
 // import {
@@ -18,18 +18,21 @@ import ProjectPage from "./Pages/Project/ProjectPage";
 import CareersPage from "./Pages/Carrers/CareersPage";
 import AboutPage from "./Pages/About/AboutPage";
 
+
+
 function App() {
   return (
     <>
-      <Routes>
+      <Routes>    
         <Route path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/project" element={<ProjectPage />} />
-        <Route path="/careess" element={<CareersPage />} />
+        <Route path="/careers" element={<CareersPage />} />
         <Route path="/about-us" element={<AboutPage />} />
       </Routes>
+ 
 
       {/* <Hero />
       <Testimonials />

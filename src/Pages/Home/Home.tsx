@@ -4,6 +4,7 @@ import {
   Footer,
   Hero,
   Project,
+
   Services,
   Testimonials,
 } from "../../component/imports";
@@ -11,6 +12,7 @@ import {
 const Home = () => {
   return (
     <>
+
       <Hero />
       <Testimonials />
       <About />

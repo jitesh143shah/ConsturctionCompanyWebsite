@@ -8,7 +8,7 @@ import "../../App.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 // import { building } from "../../images";
 import { ImagesLinks } from "../../constants/ImagesLinks";
-import { FaFaceAngry } from "react-icons/fa6";
+
 
 const Project = () => {
   return (
@@ -68,7 +68,7 @@ const Project = () => {
                   </div>
                 </SwiperSlide>
               ))}
-              <FaFaceAngry />
+         
             </Swiper>
           </div>
         </div>
