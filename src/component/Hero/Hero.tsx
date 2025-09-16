@@ -4,6 +4,7 @@
 
 import Navbar from "../Navbar/Navbar";
 import { VideoOne } from "../../video";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -34,7 +35,7 @@ const Hero = () => {
           </div>
           <div className="flex container flex-col text-white  justify-center  h-[100%] ">
             <div
-              className="flex flex-col justify-center my-20 sm:mx-10  md:mx-50
+              className="flex flex-col justify-center my-20 
             gap-7 md:gap-15 h-full"
             >
               <span className="text-5xl md:text-7xl lg:text-8xl font-roboto font-semibold ">
@@ -47,22 +48,22 @@ const Hero = () => {
                 className="flex gap-5 md:gap-10 md:flex-row flex-col
             "
               >
-                <a
-                  href="project"
+                <Link 
+                  to="project"
                   target="_blank"
                   className="border-1 border-primary bg-primary rounded-xl  hover:bg-secondary text-center
                hover:text-  px-2 sm:px-4 lg:px-15 py-2 md:py-4 duration-500 w-1/2 sm:w-2/3 md:w-full"
                 >
                   <button>View Project </button>
-                </a>
-                <a
-                  href="about-us"
+                </Link>
+                <Link
+                  to="about-us"
                   target="_blank"
                   className="border-1 border-white text-white  rounded-xl hover:bg-primary text-center
                hover:text-secondary px-2 sm:px-4 lg:px-15 py-2 md:py-4 duration-500 w-1/2 sm:w-2/3 md:w-full"
                 >
                   <button>Contact Us</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

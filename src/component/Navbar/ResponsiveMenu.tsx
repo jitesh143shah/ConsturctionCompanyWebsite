@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Navlinks } from "../../constants/Navlinks";
 
 const ResponsiveMenu = ({ showMenu }: { showMenu: boolean }) => {
@@ -24,13 +25,13 @@ const ResponsiveMenu = ({ showMenu }: { showMenu: boolean }) => {
           <div className=" flex justify-between flex-col gap-1 pt-20">
             {Navlinks.map((data) => (
               <ul className=" flex flex-col items-center capitalize text-1xl md:text-2xl text-white">
-                <a
-                  href={data.link}
+                <Link
+                  to={data.link}
                   target=""
                   className="hover:bg-primary/80 py-2  w-full items-center flex justify-center duration-500"
                 >
                   <li key={data.id}>{data.name}</li>
-                </a>
+                </Link>
               </ul>
             ))}
             <div className="flex items-center justify-center px-5 mt-10">
@@ -38,9 +39,9 @@ const ResponsiveMenu = ({ showMenu }: { showMenu: boolean }) => {
                 className="border-2 border-primary text-white   bg-primary hover:bg-white
                hover:text-secondary px-8 py-4 duration-500 rounded-xl"
               >
-                <a href="contact" target="_blank">
+                <Link to="contact" target="_blank">
                   Contact Us
-                </a>
+                </Link>
               </button>
             </div>
           </div>

@@ -4,7 +4,7 @@
 
 @layer components {
   .container {
-    @apply md:max-w-6xl  sm:max-w-4xl  mx-auto px-10 md:px-5 overflow-hidden;
+    @apply md:max-w-6xl  sm:max-w-4xl  mx-auto px-10 md:px-6 overflow-hidden;
   }
 }
 
