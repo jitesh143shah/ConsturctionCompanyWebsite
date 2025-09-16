@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ClientLinks } from "../../constants/ClientLinks";
 // import {
 //   akeofit,
@@ -26,14 +27,14 @@ const Client = () => {
             {ClientLinks.map((data) => (
               <div className="overflow-hidden  rounded-2xl">
                 <div className="bg-gray-200 h-[200px] w-full  group">
-                  <a href={data.href}>
+                  <Link to={data.href}>
                     <div
                       className="group-hover:bg-red-100 group-hover:scale-150 duration-500
                5 w-full h-full py-10 px-20 flex flex-col justify-center items-center"
                     >
                       {data.link}
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

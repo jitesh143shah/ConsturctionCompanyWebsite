@@ -5,6 +5,7 @@
 // import { PiShovelBold } from "react-icons/pi";
 // import { SlSettings } from "react-icons/sl";
 // import { TbBuildingChurch } from "react-icons/tb";
+import { Link } from "react-router-dom";
 import { ServicesLink } from "../../constants/ServicesLink";
 
 const Services = () => {
@@ -29,7 +30,7 @@ const Services = () => {
               </p>
             </div>
             <div className="md:w-sm">
-              <a href="#">
+              <Link to="/servicesreadmore">
                 <div
                   className="bg-primary px-10 md:px-8 xl:px-10 py-2 md:py-4 hover:bg-gray border-1
                    border-primary flex flex-col text-center
@@ -37,15 +38,15 @@ const Services = () => {
                 >
                   Read More
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4  justify-center items-center">
               <div className="hidden md:flex"></div>
-              {ServicesLink.map(({ title, icons: Icons }, index) => (
-                <a
-                  href="#"
+              {ServicesLink.map(({ title, icons: Icons,link }, index) => (
+                <Link
+                  to={link}
                   key={index}
                   className="flex group flex-col  duration-500 hover:translate-x-1
                hover:bg-amber-100 w-full h-full    gap-5 bg-amber-50 py-15 md:py-20 px-10 "
@@ -58,7 +59,7 @@ const Services = () => {
                   <span className="text-xl md:text-2xl text-center">
                     {title}
                   </span>
-                </a>
+                </Link>
               ))}
 
               {/* <div

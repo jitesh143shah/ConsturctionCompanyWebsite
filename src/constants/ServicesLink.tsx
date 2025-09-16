@@ -12,39 +12,48 @@ export const ServicesLink = [
   //   title: "",
   // },
   {
+    link:"/commercialconstruction",
     icons: BsBuildings,
     title: " Commercial Construction",
   },
   {
+     link:"/commercialconstruction",
     icons: IoHomeOutline,
     title: "   Residential Construction",
   },
   {
+     link:"/commercialconstruction",
     icons: GiBlackBook,
     title: "     Pre-Construction",
   },
 
   {
+     link:"/commercialconstruction",
     icons: FaUserAstronaut,
     title: "  Site Management",
   },
   {
+     link:"/commercialconstruction",
     icons: TbBuildingChurch,
     title: "    Special Projects",
   },
   {
+     link:"/commercialconstruction",
     icons: GiBulldozer,
     title: "     Infrastructure Construction",
   },
   {
+     link:"/commercialconstruction",
     icons: SlSettings,
     title: "      Civil Engineering",
   },
   {
+     link:"/commercialconstruction",
     icons: PiShovelBold,
     title: "   Landscape Construction",
   },
   {
+     link:"/commercialconstruction",
     icons: PiShovelBold,
     title: "   Landscape Construction",
   },

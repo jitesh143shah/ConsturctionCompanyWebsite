@@ -18,11 +18,16 @@ import ProjectPage from "./Pages/Project/ProjectPage";
 import CareersPage from "./Pages/Carrers/CareersPage";
 import AboutPage from "./Pages/About/AboutPage";
 
+import ServicesReadmore from "./Pages/ReadMore/ServicesReadmore";
+import CommercialConstruction from "./Pages/Services/pages/CommercialConstruction/CommercialConstruction";
+import ScrollToTopOne from "./ScrollToTopOne/ScrollToTopOne";
+
+
 
 
 function App() {
   return (
-    <>
+    <><ScrollToTopOne />
       <Routes>    
         <Route path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
@@ -31,6 +36,9 @@ function App() {
         <Route path="/project" element={<ProjectPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/about-us" element={<AboutPage />} />
+        <Route path="/servicesreadmore" element={<ServicesReadmore/>} />
+        <Route path="/commercialconstruction" element={<CommercialConstruction/>} />
+
       </Routes>
  
 

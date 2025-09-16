@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Footer, Navbar } from "../../component/imports";
 import { building } from "../../images";
 import { FaArrowDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CareersPage = () => {
   const [jobs] = useState([
@@ -65,13 +66,13 @@ const CareersPage = () => {
             <p className="text-gray-700 mb-4">
               <strong>Experience:</strong> {job.experience}
             </p>
-            <a
-              href={`mailto:hr@mcrconstruction.com?subject=Application for ${job.title}`}
+            <Link
+              to={`mailto:hr@mcrconstruction.com?subject=Application for ${job.title}`}
               className="inline-block bg-primary text-white px-6 py-3 rounded-xl hover:bg-secondary 
               transition-colors duration-300"
             >
               Apply Now
-            </a>
+            </Link>
           </div>
         ))}
       </div>

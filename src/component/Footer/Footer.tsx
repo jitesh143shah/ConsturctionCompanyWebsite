@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SocialLinks } from "../../constants/SocialLinks";
 import { ScrollToTop } from "../imports";
 import ResponsiveScrollToTop from "../ScrollToTop/ResponsiveScrollToTop";
@@ -27,12 +28,12 @@ const Footer = () => {
                 <div className="flex flex-col">
                   <span>123-456-7890</span>
                   <span>
-                    <a
-                      href="mailto:info@mysite.com"
+                    <Link
+                      to="mailto:info@mysite.com"
                       className="hover:text-primary duration-500"
                     >
                       info@mysite.com
-                    </a>
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -46,8 +47,8 @@ const Footer = () => {
                         key={index}
                         className="  hover:bg-primary duration-500"
                       >
-                        <a
-                          href={href}
+                        <Link
+                          to={href}
                           target="_blank"
                           className="flex items-center justify-between px-10 gap-5 p-2 group
                          "
@@ -61,7 +62,7 @@ const Footer = () => {
                               className="h-[25px] w-full group-hover:text-white"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   )
@@ -80,13 +81,13 @@ const Footer = () => {
               </div>
               <div className="flex flex-col gap-5 ">
                 <div className="flex items-center justify-center px-15 sm:px-20 md:px-0 ">
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact"
                     className="border-1 border-white text-white  bg-primary hover:bg-white
                hover:text-secondary px-5 sm:px-12 py-2 md:py-4 duration-500 w-full text-center"
                   >
                     <button className="cursor-pointer">Contact Us</button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
