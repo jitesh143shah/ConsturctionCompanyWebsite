@@ -9,7 +9,6 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 // import { building } from "../../images";
 import { ImagesLinks } from "../../constants/ImagesLinks";
 
-
 const Project = () => {
   return (
     <>
@@ -68,7 +67,6 @@ const Project = () => {
                   </div>
                 </SwiperSlide>
               ))}
-         
             </Swiper>
           </div>
         </div>

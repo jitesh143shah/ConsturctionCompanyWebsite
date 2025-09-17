@@ -13,3 +13,4 @@ export { default as oweer } from "./assets/Cimages/oweer.png";
 export { default as right } from "./assets/Cimages/right.png";
 export { default as shawns } from "./assets/Cimages/shawns.png";
 export { default as tocket } from "./assets/Cimages/tocket.png";
+export {default as WorkerClothes} from "./assets/WorkerClothes.avif"

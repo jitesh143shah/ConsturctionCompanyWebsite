@@ -1,4 +1,4 @@
-import { Route,  Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 // import {
@@ -18,17 +18,19 @@ import ProjectPage from "./Pages/Project/ProjectPage";
 import CareersPage from "./Pages/Carrers/CareersPage";
 import AboutPage from "./Pages/About/AboutPage";
 
+import {
+  CommercialConstruction,
+  PreConstruction,
+  ResidentialConstruction,
+} from "./Pages/pageimports";
 import ServicesReadmore from "./Pages/ReadMore/ServicesReadmore";
-import CommercialConstruction from "./Pages/Services/pages/CommercialConstruction/CommercialConstruction";
 import ScrollToTopOne from "./ScrollToTopOne/ScrollToTopOne";
-
-
-
 
 function App() {
   return (
-    <><ScrollToTopOne />
-      <Routes>    
+    <>
+      <ScrollToTopOne />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/services" element={<ServicesPage />} />
@@ -36,11 +38,17 @@ function App() {
         <Route path="/project" element={<ProjectPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/about-us" element={<AboutPage />} />
-        <Route path="/servicesreadmore" element={<ServicesReadmore/>} />
-        <Route path="/commercialconstruction" element={<CommercialConstruction/>} />
-
+        <Route path="/servicesreadmore" element={<ServicesReadmore />} />
+        <Route
+          path="/commercialconstruction"
+          element={<CommercialConstruction />}
+        />
+        <Route
+          path="/residentialconstruction"
+          element={<ResidentialConstruction />}
+        />
+        <Route path="/preconstruction" element={<PreConstruction />} />
       </Routes>
- 
 
       {/* <Hero />
       <Testimonials />

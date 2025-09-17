@@ -17,9 +17,13 @@ const Breadcrumbs = () => {
             <li key={index}>
               <span className="mx-1">/</span>
               {isLast ? (
-                <span className="font-bold">{name.charAt(0).toUpperCase() + name.slice(1)}</span>
+                <span className="font-bold">
+                  {name.charAt(0).toUpperCase() + name.slice(1)}
+                </span>
               ) : (
-                <Link to={routeTo}>{name.charAt(0).toUpperCase() + name.slice(1)}</Link>
+                <Link to={routeTo}>
+                  {name.charAt(0).toUpperCase() + name.slice(1)}
+                </Link>
               )}
             </li>
           );

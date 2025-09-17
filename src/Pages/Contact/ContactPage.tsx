@@ -1,8 +1,8 @@
-import { FaStar } from "react-icons/fa";
+import { FaArrowDown, FaStar } from "react-icons/fa";
 import { Footer, Navbar } from "../../component/imports";
 import { ContactPageLink } from "../../constants/ContactPageLink";
 import { SocialLinks } from "../../constants/SocialLinks";
-import { construction } from "../../images";
+import {  WorkerClothes } from "../../images";
 
 const ContactPage = () => {
   return (
@@ -11,11 +11,18 @@ const ContactPage = () => {
         <Navbar />
         <div className="container text-white py-7  md:py-10  ">
           <div className="mb-5">
-            <h1 className="capitalize text-center text-4xl md:text-6xl lg:text-8xl font-bold pb-12
-            bg-fixed bg-center bg-cover h-[400px] justify-center flex items-center rounded-b-[15%]                       bg-no-repeat
-             " 
-           style={{ backgroundImage: `url(${construction})  ` }}>
-              Conctact Us
+            <h1
+              className="capitalize text-center text-4xl md:text-6xl lg:text-7xl font-bold pb-12
+            bg-fixed bg-center bg-cover object-cover h-[400px] justify-center flex items-center rounded-b-[15%]                       bg-no-repeat
+             "
+              style={{ backgroundImage: `url(${WorkerClothes})  ` }}
+            >
+         <div className="flex items-center justify-center group hover:underline duration-500 gap-5 ">
+                       <span className=" "> Contact Us</span>
+                       <span className="group-hover:translate-y-15 duration-500 text-2xl md:text-4xl xl:text-6xl">
+                         <FaArrowDown />
+                       </span>
+                     </div>
             </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 ">

@@ -44,7 +44,7 @@ const Services = () => {
           <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4  justify-center items-center">
               <div className="hidden md:flex"></div>
-              {ServicesLink.map(({ title, icons: Icons,link }, index) => (
+              {ServicesLink.map(({ title, icons: Icons, link }, index) => (
                 <Link
                   to={link}
                   key={index}

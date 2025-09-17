@@ -30,12 +30,12 @@ const Navbar = () => {
         className={`w-full transition-all duration-300 ${
           isFixed
             ? "fixed top-0 left-0 bg-black md:bg-black/0 shadow-md md:shadow-none z-50 "
-            : "relative bg-transparent "
+            : "relative bg-transarent  "
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center px-10 md:px-6 py-2 ">
           <Link
-            to="#"
+            to="/"
             className="logo flex flex-col  justify-center items-center text-center h-fit py-1
             cursor-pointer bg-secondary/70 text-white  md:px-3 px-1 border-2 hover:bg-secondary border-primary "
           >
@@ -80,7 +80,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Icon */}
-          <div className="lg:hidden flex text-white z-50 justify-center items-center">
+          <div className="lg:hidden flex text-primary z-50 justify-center items-center">
             {showMenu ? (
               <IoClose
                 onClick={toggleMenu}

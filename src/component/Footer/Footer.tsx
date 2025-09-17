@@ -6,27 +6,34 @@ import ResponsiveScrollToTop from "../ScrollToTop/ResponsiveScrollToTop";
 const Footer = () => {
   return (
     <>
-      <div className="bg-gray">
+      <div className="bg-gray-400">
         <div className="container relative ">
           <hr />
-          <div className="py-20 flex flex-col justify-end gap-10">
+          <div className="pt-20 pb-10 flex flex-col justify-end gap-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 ">
-              <div
+              <Link
+                to="/"
                 className="logo flex flex-col justify-center items-center h-fit w-fit
                  cursor-pointer bg-secondary/70 text-white px-3  py-1 border-2 duration-500
                   hover:bg-secondary border-primary "
               >
                 <span className="uppercase text-xl ">MCR</span>
                 <span>Construction</span>
-              </div>
+              </Link>
               <div className="flex flex-col gap-5">
                 <div className="font-bold text-xl md:text-2xl">Head Office</div>
-                <div className="flex flex-col capitalize ">
-                  <span>500 Terry Francine Street</span>
-                  <span>San Francisco, CA 94158</span>
+                <div className="flex flex-col capitalize  ">
+                  <span className="hover:text-primary duration-500">
+                    500 Terry Francine Street
+                  </span>
+                  <span className="hover:text-primary duration-500">
+                    San Francisco, CA 94158
+                  </span>
                 </div>
                 <div className="flex flex-col">
-                  <span>123-456-7890</span>
+                  <span className="hover:text-primary duration-500">
+                    123-456-7890
+                  </span>
                   <span>
                     <Link
                       to="mailto:info@mysite.com"
@@ -65,7 +72,7 @@ const Footer = () => {
                         </Link>
                       </div>
                     </div>
-                  )
+                  ),
                 )}
               </div>
               <div className="flex flex-col gap-5">
@@ -74,9 +81,12 @@ const Footer = () => {
                     Inquiries
                   </span>
                 </div>
-                <span>
+                <span className="group">
                   For any inquiries, questions, or connendations, please call:
-                  123-456-7890
+                  <span className="group-hover:text-primary duration-500">
+                    {" "}
+                    123-456-7890
+                  </span>
                 </span>
               </div>
               <div className="flex flex-col gap-5 ">

@@ -7,9 +7,9 @@ const ServicesReadmore = () => {
   return (
     <>
       <Navbar />
-      <div className="  grid grid-cols-2 container ">
+      <div className="  grid  grid-cols-1 md:grid-cols-2 container py-10">
         <div className="py-15 flex flex-col justify-center text-xl md:text-3xl ">
-          {ServicesLink.map(({ title, icons: Icons ,link}, index) => (
+          {ServicesLink.map(({ title, icons: Icons, link }, index) => (
             <div className="flex">
               <Link to={link}>
                 <div
@@ -29,7 +29,11 @@ const ServicesReadmore = () => {
           ))}
         </div>
         <div>
-          <img src={construction} alt={construction} className="h-full w-full object-cover" />
+          <img
+            src={construction}
+            alt={construction}
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
 

@@ -48,7 +48,7 @@ const Hero = () => {
                 className="flex gap-5 md:gap-10 md:flex-row flex-col
             "
               >
-                <Link 
+                <Link
                   to="project"
                   target="_blank"
                   className="border-1 border-primary bg-primary rounded-xl  hover:bg-secondary text-center

@@ -1,10 +1,5 @@
-
 const ResidentialConstruction = () => {
-  return (
-    <div>
-      Residential Construction
-    </div>
-  )
-}
+  return <div>Residential Construction</div>;
+};
 
-export default ResidentialConstruction
+export default ResidentialConstruction;
