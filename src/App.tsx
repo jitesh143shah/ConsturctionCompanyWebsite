@@ -25,6 +25,7 @@ import {
 } from "./Pages/pageimports";
 import ServicesReadmore from "./Pages/ReadMore/ServicesReadmore";
 import ScrollToTopOne from "./ScrollToTopOne/ScrollToTopOne";
+import Login from "./Auth/Login/Login";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           element={<ResidentialConstruction />}
         />
         <Route path="/preconstruction" element={<PreConstruction />} />
+        <Route path="/login" element={<Login/>}/>
       </Routes>
 
       {/* <Hero />

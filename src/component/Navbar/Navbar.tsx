@@ -3,6 +3,8 @@ import { Navlinks } from "../../constants/Navlinks.js";
 import { IoClose, IoMenu } from "react-icons/io5";
 import ResponsiveMenu from "./ResponsiveMenu.js";
 import { Link, useLocation } from "react-router-dom";
+import { BiLogInCircle } from "react-icons/bi";
+import { SocialLinks } from "../../constants/SocialLinks.js";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -26,10 +28,37 @@ const Navbar = () => {
 
   return (
     <>
+      <div className="container pt-5 hidden md:block ">
+       <div className="flex justify-between ">
+        <div className="flex gap-3 items-center justify-center">
+          {SocialLinks.map(({icons:Icon,color},index)=>(
+            <div key={index} >
+              <Icon className="hover:text-white p-2 rounded-full text-3xl duration-500 bg-primary/10 hover:bg-primary/40" style={{ color: color }} />
+            </div>
+
+          ))}
+        </div>
+         <div>
+          <Link to="/login" className="">
+          <div className="flex justify-between">
+                      <div
+              className=" py-2 px-15 rounded-xl hover:text-white
+               flex justify-end   items-center text-2xl hover:bg-primary
+                bg-primary/30 duration-500 gap-3"
+            >
+              <BiLogInCircle />
+              login
+            </div>
+          </div>
+        </Link>
+        </div>
+       </div>
+      </div>
+
       <nav
-        className={`w-full transition-all duration-300 ${
+        className={`w-full transition-all duration-300   ${
           isFixed
-            ? "fixed top-0 left-0 bg-black md:bg-black/0 shadow-md md:shadow-none z-50 "
+            ? "fixed top-0 left-0 bg-gray-700 md:bg-black/0 shadow-md md:shadow-none z-50 "
             : "relative bg-transarent  "
         }`}
       >
@@ -46,11 +75,11 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-0.5 font-bold">
+          <div className="hidden lg:flex items-center gap-0.5 ">
             <div className="border-2 border-primary">
               <ul className="flex items-center text-1xl cursor-pointer">
                 {Navlinks.map((data, index) => (
-                  <Link className="uppercase" to={data.link} target="">
+                  <Link className="capitalize" to={data.link} target="">
                     <li
                       key={index}
                       // className="w-[100px] py-5 flex justify-center hover:bg-white hover:text-secondary

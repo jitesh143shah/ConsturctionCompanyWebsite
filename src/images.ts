@@ -13,4 +13,12 @@ export { default as oweer } from "./assets/Cimages/oweer.png";
 export { default as right } from "./assets/Cimages/right.png";
 export { default as shawns } from "./assets/Cimages/shawns.png";
 export { default as tocket } from "./assets/Cimages/tocket.png";
-export {default as WorkerClothes} from "./assets/WorkerClothes.avif"
+export { default as WorkerClothes } from "./assets/WorkerClothes.avif";
+export { default as CommercialConstruction } from "./assets/CommercialConstruction.avif";
+export { default as ResidentailConstruction } from "./assets/ResidentailConstruction.avif";
+export { default as PreConstruction } from "./assets/PreConstruction.avif";
+export { default as SpecialProject } from "./assets/SpecialProject.avif";
+export { default as SiteManagement } from "./assets/SiteManagement.avif";
+export { default as InfrastructureConstruction } from "./assets/InfrastructureConstruction.avif";
+export { default as CivilEngineering } from "./assets/CivilEngineering.avif";
+export { default as LandscapeConstruction } from "./assets/LandscapeConstruction.avif";

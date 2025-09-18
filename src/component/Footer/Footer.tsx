@@ -84,7 +84,7 @@ const Footer = () => {
                 <span className="group">
                   For any inquiries, questions, or connendations, please call:
                   <span className="group-hover:text-primary duration-500">
-                    {" "}
+                  
                     123-456-7890
                   </span>
                 </span>

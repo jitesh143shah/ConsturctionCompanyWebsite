@@ -7,6 +7,7 @@ const AboutPage = () => {
     <>
       <div>
         <Navbar />
+
         <div className="mb-5">
           <h1
             className="capitalize text-center text-4xl md:text-6xl lg:text-7xl font-bold pb-12
@@ -26,7 +27,6 @@ const AboutPage = () => {
         <div className="from-chat-gpt">
           <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-        
 
             {/* Company Info */}
             <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center">
@@ -125,7 +125,6 @@ const AboutPage = () => {
         </div>
 
         <About />
-        
         <Footer />
       </div>
     </>

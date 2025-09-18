@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+PL:wght@100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manufacturing+Consent&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+PL:wght@100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Style+Script&display=swap");
 @import "tailwindcss";
-/* @import url("https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+PL:wght@100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Style+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manufacturing+Consent&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+PL:wght@100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Style+Script&display=swap"); */
 
 @layer components {
   .container {

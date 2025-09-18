@@ -11,7 +11,7 @@ const Hero = () => {
     <>
       <div className="    ">
         <div className="relative ">
-          <div className="absolute z-[-10] h-[100%] w-[100%]">
+          <div className="absolute z-[-10] h-[100%] w-[100%] ">
             {/* <img
               src={construction}
               alt="Construction"
@@ -23,7 +23,7 @@ const Hero = () => {
               loop
               muted
               playsInline
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover "
             ></video>
           </div>
           <div
